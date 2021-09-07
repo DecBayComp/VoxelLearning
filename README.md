@@ -27,12 +27,12 @@ For more information, read the following paper: REF
 
 
 # Installation and Requirements
-DIVA is designed to run on the Windows 10 operating system. We recommend using DIVA with an Intel i5 processor equivalent or better, at least 4GB RAM of memory, 300 MB of storage and a NVIDIA GeForce 900 Series or better Graphical Processing Unit (GPU). DIVA can be used with and witout VR headset and is compatible with HTC Vive, HTC Vive Pro, Oculus Rift, Oculus Rift S, Oculus Quest (with Link Cable) and Windows Mixed Reality. For each type of VR headsets you have to download the corresponding installation software (such as [ViveSetup](https://www.vive.com/fr/setup/pc-vr/) or [Oculus](https://www.oculus.com/setup/?locale=fr_FR)). In addition, [SteamVR](https://www.steamvr.com/fr/) is required to use VR functions. You can find DIVA user manual and all the information about the legacy software [here](https://diva.pasteur.fr/). 
+DIVA is designed to run on the Windows 10 operating system with at least OpenCL 2.0. We recommend using DIVA with an Intel i5 processor equivalent or better, at least 4GB RAM of memory, 300 MB of storage and a NVIDIA GeForce 900 Series or better Graphical Processing Unit (GPU). DIVA can be used with and witout VR headset and is compatible with HTC Vive, HTC Vive Pro, Oculus Rift, Oculus Rift S, Oculus Quest (with Link Cable) and Windows Mixed Reality. For each type of VR headsets you have to download the corresponding installation software (such as [ViveSetup](https://www.vive.com/fr/setup/pc-vr/) or [Oculus](https://www.oculus.com/setup/?locale=fr_FR)). In addition, [SteamVR](https://www.steamvr.com/fr/) is required to use VR functions. You can find DIVA user manual and all the information about the legacy software [here](https://diva.pasteur.fr/). 
 
-1. Install DIVA : load the folder "blabla" and execute DIVA by double-clicking on the provided *diva.exe* file. 
-2. Install Python 3.7.4
-3. Install Python librairies : install all librairies of the *requirements.txt* file in "blabla" folder for local computation or in "blablabl" folder for remote computation. 
-4. Install DIVA-cloud (only for remote computation) : load the diva-django and diva-docker folder. Follow instructions on (LINK READ ME DOCKER AND DKANGO)
+1. Install DIVA : load the folder *blabla* and execute DIVA by double-clicking on the provided *diva.exe* file. 
+2. Install [Python 3.7.4](https://www.python.org/downloads/windows/)
+3. Install Python librairies : install all librairies of the *requirements.txt* file in "blabla" folder for local computation or in *blablabl* folder for remote computation. 
+4. Install DIVA-cloud (only for remote computation) : load the *diva-django* and *diva-docker folder*. Follow instructions on (LINK READ ME DOCKER AND DKANGO)
 
 
  OpenCL versions > 2.0
