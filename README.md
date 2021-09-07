@@ -13,11 +13,11 @@ For more information, read the following paper: REF
 
 # Table of Contents
 - [Installation and Requirements](#installation-and-requirements)
-- [Apply Voxel Learning to your data](#Apply Voxel Learning to your data)
-  * [Load your image](#Load your image)
-  * [Improve visualization](#Improve visualization)
-  * [Annotate in VR](#Annotate in VR)
-  * [Compute locally or remotely](#Compute locally or remotely)
+- [Apply Voxel Learning to your data](#apply-voxel-learning-to-your-data)
+  * [Load your image](#load-your-image)
+  * [Improve visualization](#improve-visualization)
+  * [Annotate in VR](#annotate-in-VR)
+  * [Compute locally or remotely](#compute-locally-or-remotely)
   * [Train your model](#model-training)
     - [Choose your model]
     - [Manage your models] 
