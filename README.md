@@ -19,8 +19,8 @@ For more information, read the following paper: REF
   * [Annotate in VR](#annotate-in-VR)
   * [Compute locally or remotely](#compute-locally-or-remotely)
   * [Train your model](#model-training)
-    - [Choose your model]
-    - [Manage your models] 
+    - [Choose your model](#choose-your-model)
+    - [Manage your models](#manage-your-models)
   * [Perform and visualize inference](#run-inference)
 - [Iterate the procedure](#how-to-run-inference-with-pretrained-models)
 - [Examples](#examples)
