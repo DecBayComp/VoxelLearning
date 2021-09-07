@@ -34,6 +34,9 @@ DIVA is designed to run on the Windows 10 operating system with at least OpenCL 
 3. Install Python librairies : install all librairies of the *requirements.txt* file in "blabla" folder for local computation or in *blablabl* folder for remote computation. 
 4. Install DIVA-cloud (only for remote computation) : load the *diva-django* and *diva-docker folder*. Follow instructions on (LINK READ ME DOCKER AND DKANGO)
 
+SEE procedure install dans diva python pour ref
++ NEED CLEAN FOLDER DIVA PYTHON / DOCKER
++ UPLOAD EXE QITHOU MAC ADRESSE NEEDED
 
 docker/clouf cf readme ( lmodifier readme lien vers gitlab)
 
