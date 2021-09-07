@@ -35,26 +35,26 @@ DIVA is designed to run on the Windows 10 operating system with at least OpenCL 
 4. Install DIVA-cloud (only for remote computation) : load the *diva-django* and *diva-docker folder*. Follow instructions on (LINK READ ME DOCKER AND DKANGO)
 
 
- OpenCL versions > 2.0
-
 docker/clouf cf readme ( lmodifier readme lien vers gitlab)
 
 # Apply Voxel Learning to your data
 
 ## Load your image
 8 - 16bits, import / button dans DIVA
+converrssion .dcm en tiff +9 liein vers images d'examples 
 
 ## Improve visualization
-explque vite fait 
+explque vite fait principe
 save tf
+cf video
 
 ## Annotate in VR
-steps in VR 
-save tags
+steps in VR / butoon / princpe
+cf video
+save tags en json
 
 ## Compute locally or remotely
-local ou cloud
- et why 
+local ou cloud : expliquer la difference / apports etc... 
  
 ## Train your model
 
