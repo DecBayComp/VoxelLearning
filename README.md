@@ -57,16 +57,24 @@ cf video
 save tags en json
 
 ## Compute locally or remotely
-local ou cloud : expliquer la difference / apports etc... 
- 
-## Train your model
+Once the tagging step is done, open the dedicated **Voxel Learning** panel by clicking on *Advanced* in the top right corner and then on the *Rubik’s cube* pictogram. It is now possible to click on the *double arrow* and choose to do *Local* or *Cloud* computation. In the latter, you should specify which *Server* and *Port* to be used.
 
-### Choose your model
-    (liste models correspondan a strength)
-### Manage your models
-  export / save pckl
+## Train your model
+Click on the yellow rectangle *New Classifier* to browse your folder and create a pickle file (*.pckl*).
+Select which learner you want to train by modulating the slider *Strength* from 1 to 10:
+- 1: Random Forest Classifier (RFC)
+- 2: Gradient Boosting Classifier (XGB)
+- 3: Linear classifier with Stochastic Gradient Descent learning (SGD)
+- 4: Naïve Bayes Classifier (NBC)
+- 5: Multilayer Perceptron (MLP)
+- 6-10: *Strong Learner* - Gradient boosting classifier with 4 weak classifiers 
+
+Once your model is selected, click on *Train* to launch the training. It will open a new terminal, printing the duration of the training in the terminal at the end of the process.
   
 ## Perform and visualize inference
+Click on the yellow rectangle *Classifier* to browse and select a trained classifier. Press then *Infer* to launch the inference. It will open a new terminal, printing the duration of the inference in the terminal at the end of the process.
+
+
 open classifier / 
 export save => open 2nd channel => change TF
 
