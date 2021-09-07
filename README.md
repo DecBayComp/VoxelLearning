@@ -71,6 +71,7 @@ Once your model is selected, click on *Train* to launch the training. It will op
   
 ## Perform and visualize inference
 Click on the yellow rectangle *Classifier* to browse and select a trained classifier. Press then *Infer* to launch the inference. It will open a new terminal, printing the duration of the inference in the terminal at the end of the process.
+
 The resulting annotation will appear in a second channel of the original file, that you can select in the top-right corner by clicking on the second coloured icons. It is now possible to modify the transfer function to improve visualization, and to save the annotation by successively clicking on *Volume*, *2* and *Export*.
 
 # Iterate the procedure
