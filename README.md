@@ -1,4 +1,4 @@
-# DIVA Cloud for voxel learning with VR annotation
+# Voxel Learning in DIVA
 
 Three-dimensional imaging is at the core of medical imaging and is becoming a standard in biological research. There is an increasing need to visualize, analyze and interact with data in a natural three-dimensional context. By combining stereoscopy and motion tracking, commercial virtual reality (VR) headsets provide a solution to this important visualization challenge by allowing any user to view volumetric image stacks in a highly intuitive fashion.
 
@@ -13,16 +13,16 @@ For more information, read the following paper: REF
 
 # Table of Contents
 - [Installation and Requirements](#installation-and-requirements)
-- [How to DO -Net on a new dataset](#how-to-run-nnu-net-on-a-new-dataset)
-  * [Image loading](#image-loading)
-  * [Transfer Function Engineering](#transfer-function-engineerin)
-  * [Annotation in VR](#annotation-in-vr)
-  * [Choose computational model]
-  * [Model training](#model-training)
-    - [Classification Strength](#2d-u-net) (liste models correspondan a strength)
-    - [Output probabilities] 
-  * [Run inference](#run-inference)
-- [How to run inference with pretrained models](#how-to-run-inference-with-pretrained-models)
+- [Apply Voxel Learning to your data](#Apply Voxel Learning to your data)
+  * [Load your image](#Load your image)
+  * [Improve visualization](#Improve visualization)
+  * [Annotate in VR](#Annotate in VR)
+  * [Compute locally or remotely](#Compute locally or remotely)
+  * [Train your model](#model-training)
+    - [Choose your model]
+    - [Manage your models] 
+  * [Perform and visualize inference](#run-inference)
+- [Iterate the procedure](#how-to-run-inference-with-pretrained-models)
 - [Examples](#examples)
 
 
@@ -39,17 +39,16 @@ docker/clouf cf readme ( lmodifier readme lien vers gitlab)
 DIVA exe
 
 
-# HOW TO USE
+# Apply Voxel Learning to your data
 
-## Image Loading 
+## Load your image
 8 - 16bits, import / button dans DIVA
 
-## Transfer Function Engineering
-
+## Improve visualization
 explque vite fait 
 save tf
 
-## Annotation in VR
+## Annotate in VR
 steps in VR 
 save tags
 
@@ -57,10 +56,11 @@ save tags
 local ou cloud
  et why 
  
-## Model training
+## Train your model
 
-### Classification Strength
-### Output probabilities
+### Choose your model
+    (liste models correspondan a strength)
+### Manage your models
   export / save pckl
   
 ## Run inference
