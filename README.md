@@ -55,7 +55,9 @@ cf video
 save tags en json
 
 ## Compute locally or remotely
-Once the tagging step is done, open the dedicated **Voxel Learning** panel by clicking on *Advanced* in the top right corner and then on the *Rubik’s cube* pictogram. It is now possible to click on the *double arrow* and choose to do *Local* or *Cloud* computation. In the latter, you should specify which *Server* and *Port* to be used.
+Once the tagging step is done, open the dedicated **Voxel Learning** panel by clicking on *Advanced* in the top right corner and then on the *Rubik’s cube* pictogram. 
+
+Click on the *double arrow* to choose *Local* or *Cloud* computation. In the latter, you should specify which *Server* and *Port* to be used.
 
 ## Train your model
 Click on the yellow rectangle *New Classifier* to browse your folder and create a pickle file (*.pckl*).
