@@ -52,7 +52,7 @@ If your original data is stored in a DICOM format (such as in the [example](/mat
     2) Group files with similar names : ON
     3) Open all series : ON
     4) All other options are OFF
-2) Improve visualization with *Image/Adjust/Brightness* => Click on "Auto"
+2) Improve visualization with *Image/Adjust/Brightness* => Click on **Auto**
 3) Make sure that the format is 8 or 16bit, if not change it in *Image/Type/* 
 4) Save as TIFF format : *File/Save As/Tiff*
 
@@ -67,7 +67,7 @@ Voxel color and opacity can be modify in real-time through a user-friendly trans
 We recommend you to custom this transfer function to see your object of interest and save it as .json file using the **Save button** inorder to re-open it if necessary.
 
 ## Annotate in VR
-Switching to and from VR mode is performed by clicking on the button ICON at the top left corner and will automatically launch SteamVR to activate the connected VR headset. Important : This button will not respond if SteamVR is not installed.
+Switching to and from VR mode is performed by clicking on  <img src="materials/diva_buttons/diva_vr_button.JPG" width="30px" /> at the top left corner and will automatically launch SteamVR to activate the connected VR headset. Important : This button will not respond if SteamVR is not installed.
 
 see this [video](/materials/article_videos/VideoS2_DIVA_tagging_lung_image01_29-97fps.mp4) for the tagging step. 
  
