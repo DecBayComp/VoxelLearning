@@ -44,11 +44,11 @@ DIVA is designed to run on the Windows 10 operating system with at least OpenCL 
 For a complete voxel learning pipeline example see this [video](/materials/article_videos/VideoS1_DIVA_learning_pipeline.mp4). 
 
  ## Load your image
-Voxel learning process requires Tagged Image File Format (TIFF) image files of 8 or 16-bits. We recommend limiting the size of loaded files to less than 1 GB. Larger files may be scaled or cropped via [ImageJ/Fiji](https://imagej.net/software/fiji/downloads) for example. Multichannel files organized using the ImageJ/Fiji convention are supported. To improve DIVA performance, use images that are located on your disk.
+The voxel learning process requires Tagged Image File Format (TIFF) image files in 8 or 16-bits. We recommend limiting the size of loaded files to less than 1 GB. Larger files may be scaled or cropped via [ImageJ/Fiji](https://imagej.net/software/fiji/downloads) for example. Multichannel files organized using the ImageJ/Fiji convention are supported. To improve DIVA performances, use images that are located on your disk.
 
 If your original data is stored in a DICOM format (such as in the [example](/materials/data_examples/breast_cancer_image_01/raw_data/), you have to convert the data to a TIFF format with ImageJ/Fiji for example : 
  
- 1) Open DICOM image via *Plugins/bio-Fromats/Bio-Formats* Importer with options :
+ 1) Open the DICOM image via *Plugins/bio-Fromats/Bio-Formats* Importer with options :
     - View stack with : Hyperstack
     - Group files with similar names : ON
     - Open all series : ON
@@ -57,19 +57,19 @@ If your original data is stored in a DICOM format (such as in the [example](/mat
 3) Make sure that the format is 8 or 16bit, if not change it in *Image/Type/* 
 4) Save as TIFF format : *File/Save As/Tiff*
 
-Then, importation can be done directy on DIVA using the <img src="materials/diva_buttons/diva_file_explorer_button.JPG" width="20px" /> button with *TIFF* option (in the top-left corner) which open a file browser or by dragging and dropping directly your tiff file. 
+Importation can then be done in DIVA using the <img src="materials/diva_buttons/diva_file_explorer_button.JPG" width="20px" /> button with the *TIFF* option (in the top-left corner) which opens a file browser or by drag-and-dropping your TIFF file direclty. 
 
 ## Improve visualization
 
 <img align="left" src="materials/diva_buttons/diva_transfer_function_panel.JPG" width="350px" />
 
-Voxel color and opacity can be modify in real-time through a user-friendly transfer function interface composed of the image histogram in gray, one white curve for opacity and one color bar. Each of them are defined with control points which can be adjusted by dragging with the left mouse button (more details on the [DIVA manual user](https://diva.pasteur.fr/wp-content/uploads/2019/09/diva-viewer-manual.pdf)). The basic principle of transfer function is that each pixel of the histogram under the curve will be displayed with the corresponding color in the color bar, and each pixel above the curve will be disable in the 3D and VR view. For multichannel files, each channel possesses its own transfer function which is activated by left clicking on the corresponding channel icon in the volume menu.
+Voxel color and opacity can be modified in real-time through a user-friendly transfer function interface composed of the image histogram in gray, one white curve for the opacity and one color bar. Each of them are defined with control points which can be adjusted by dragging with the left mouse button (more details on the [DIVA user manual](https://diva.pasteur.fr/wp-content/uploads/2019/09/diva-viewer-manual.pdf)). The basic principle of the transfer function is that each pixel of the histogram under the curve will be displayed with the corresponding color in the color bar, and each pixel above the curve will be disabled in the 3D and VR view. For multichannel files, each channel possesses its own transfer function which can be activated by left clicking on the corresponding channel icon in the *Volume* panel.
 
 We recommend you to custom this transfer function to see your object of interest and save it as .json file using the **Save button** inorder to re-open it if necessary.
 
 ## Annotate in VR
 Switching to and from VR mode is performed by clicking on <img src="materials/diva_buttons/diva_vr_button.JPG" width="30px" /> in the top-left corner and will automatically launch SteamVR to activate the connected VR headset. Important : this button will not respond if SteamVR is not installed.
-In VR environment, you can iteract with the volume trhough the VR controller (for iteraction details see [DIVA manual user](https://diva.pasteur.fr/wp-content/uploads/2019/09/diva-viewer-manual.pdf)). 
+In VR environment, you can iteract with the volume trhough the VR controller (for iteraction details see [DIVA user manual](https://diva.pasteur.fr/wp-content/uploads/2019/09/diva-viewer-manual.pdf)). 
  
  For the tagging step you have to activate the **Clipper Tool** to cut in real-time in the volume and the **Tagger tool**. Tagging is done with the VR controller by clicking on the **+** button and choosing the tag color (cyan for positive tags and magenta for negative tags). A video example is available [here](/materials/article_videos/VideoS2_DIVA_tagging_lung_image01_29-97fps.mp4). All the tags can be saved as .json file (in order to be re-opened later in DIVA) by clicking on **VR Annotations** in the top-right corner, then on the icon <img src="materials/diva_buttons/diva_tagger_icon.JPG" width="20px" /> and finally on **Export** button.
 
