@@ -39,7 +39,7 @@ DIVA is designed to run on the Windows 10 operating system with at least OpenCL 
 
 ## Load your image
 Voxel learning process required Tagged Image File Format (TIFF) image files of 8 or 16-bits. We recommend limiting the size of loaded files to less than 1 GB. Larger files may be scaled or
-cropped via [ImageJ/Fiji]() for example. Multichannel files organized using the ImageJ/Fiji convention are supported. To improve DIVA performance, use images that are located on your disk.
+cropped via [ImageJ/Fiji](https://imagej.net/software/fiji/downloads) for example. Multichannel files organized using the ImageJ/Fiji convention are supported. To improve DIVA performance, use images that are located on your disk.
 
 If your original data is stored in a DICOM format (such as in the [example](/materials/data_examples/breast_cancer_image_01/raw_data/), you have to convert the data to a TIFF format :
 
@@ -72,14 +72,11 @@ Click on <img src="materials/diva_buttons/diva_double_arrow_button.JPG" width="2
 
 
 ## Train your model
-<img align="left" src="materials/diva_buttons/diva_train_panel.JPG" width="300px" />
+
+<img align="right" src="materials/diva_buttons/diva_train_panel.JPG" width="250px" />
+
 Click on the yellow rectangle **New Classifier** to browse your folder and create a pickle file (**.pckl**).
-   
 
-
-<br />      
-<br />
-<br />
 Select which learner you want to train by modulating the slider **Strength** from 1 to 10:
 
  - 1: Random Forest Classifier (RFC)
@@ -93,7 +90,7 @@ Once your model is selected, click on **Train** to launch the training. It will 
   
 ## Perform and visualize inference
 
-Click on the yellow rectangle **Classifier** to browse and select a trained classifier. Press then <img src="materials/diva_buttons/diva_infer_button.JPG" width="20px" /> to launch the inference. It will open a new terminal, printing the duration of the inference in the terminal at the end of the process.
+Click on the yellow rectangle **Classifier** to browse and select a trained classifier. Press then <img src="materials/diva_buttons/diva_infer_button.JPG" width="30px" /> to launch the inference. It will open a new terminal, printing the duration of the inference in the terminal at the end of the process.
 
 The resulting annotation will appear in a second channel of the original file, that you can select in the top-right corner by clicking on the second coloured icons. It is now possible to modify the transfer function to improve visualization, and to save the annotation by successively clicking on **Volume**, **2** and **Export**.
 
