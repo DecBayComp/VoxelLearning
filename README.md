@@ -38,13 +38,22 @@ DIVA is designed to run on the Windows 10 operating system with at least OpenCL 
 # Apply Voxel Learning to your data
 
 ## Load your image
-Voxel learning process processes with Tagged Image File Format (TIFF) image files of 8 or 16-bits.
-If your original data is stored in a DICOM forat (such as in the example data, you have to converted the data to a TIFF format using for example [Fiji]().
+Voxel learning process required Tagged Image File Format (TIFF) image files of 8 or 16-bits. We recommend limiting the size of loaded files to less than 1 GB. Larger files may be scaled or
+cropped via [ImageJ/Fiji]() for example. Multichannel files organized using the ImageJ/Fiji convention are supported. To improve DIVA performance, use images that are located on your disk.
 
-Procedure : 
-attention save image sur disque local
-8 - 16bits, import / button dans DIVA
-converrssion .dcm en tiff +9 liein vers images d'examples 
+If your original data is stored in a DICOM format (such as in the [example](/materials/data_examples/breast_cancer_image_01/raw_data/), you have to convert the data to a TIFF format :
+
+Conversion procedure using ImageJ/Fiji : 
+1) Open DICOM image via *Plugins/bio-Fromats/Bio-Formats* Importer with options :
+    - View stack with : Hyperstack
+    - Group files with similar names : ON
+    - Open all series : ON
+    - All other options are OFF
+2) Improve visualization with *Image/Adjust/Brightness* => Click on "Auto"
+3) Make sure that the format is 8 or 16bit, if not change it in *Image/Type/* 
+4) Save as TIFF format : *File/Save As/Tiff*
+
+Then, importation can be done directy on DIVA using the <img src="\materials\diva_file_explorer_button.JPG" width="100px" /> button with *TIFF* option or by dragging and dropping directly your tiff file. 
 
 ## Improve visualization
 explque vite fait principe
