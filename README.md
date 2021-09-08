@@ -37,7 +37,7 @@ DIVA is designed to run on the Windows 10 operating system with at least OpenCL 
 > $ `pip install -r requirements.txt` use this [requirements.txt file](/diva_cloud/diva_django/requirements.txt)
 3. Install DIVA Cloud (only for remote computation) : load the [diva_dango](/diva_cloud/diva_django/) and [diva_docker](/diva_cloud/diva_docker) folders and follow instructions on README files.
 4. Launch SteamVR before DIVA software if you want to use VR environment.
-5. Install DIVA : choose in the *diva_voxel_learning* folder the version of the updated software you want to use : one uses 56 features for voxel learning (see details in the article) and the other uses only pixel neighborhood information. Load the corresponding folder and execute DIVA by double-clicking on the provided *diva.exe* file. DIVA will take a moment to load as it allocates memory (roughly 20–30 seconds).
+5. Install DIVA : choose in the [*diva_voxel_learning* folder](/diva_voxel_learning) the version of the updated software you want to use : one uses 56 features for voxel learning (see details in the article) and the other uses only pixel neighborhood information. Load the corresponding folder and execute DIVA by double-clicking on the provided *diva.exe* file. DIVA will take a moment to load as it allocates memory (roughly 20–30 seconds).
 
 # Apply Voxel Learning to your data
  
@@ -68,7 +68,7 @@ Voxel color and opacity can be modify in real-time through a user-friendly trans
 We recommend you to custom this transfer function to see your object of interest and save it as .json file using the **Save button** inorder to re-open it if necessary.
 
 ## Annotate in VR
-Switching to and from VR mode is performed by clicking on <img src="materials/diva_buttons/diva_vr_button.JPG" width="30px" /> in the top-left corner and will automatically launch SteamVR to activate the connected VR headset. Important : this button will not respond if SteamVR is not installed.
+Switching to and from VR mode is performed by clicking on <img src="materials/diva_buttons/diva_vr_button.JPG" width="20px" /> in the top-left corner and will automatically launch SteamVR to activate the connected VR headset. Important : this button will not respond if SteamVR is not installed.
 In VR environment, you can iteract with the volume trhough the VR controller (for iteraction details see [DIVA manual user](https://diva.pasteur.fr/wp-content/uploads/2019/09/diva-viewer-manual.pdf)). 
  
  For the tagging step you have to activate the **Clipper Tool** to cut in real-time in the volume and the **Tagger tool**. Tagging is done with the VR controller by clicking on the **+** button and choosing the tag color (cyan for positive tags and magenta for negative tags). A video example is available [here](/materials/article_videos/VideoS2_DIVA_tagging_lung_image01_29-97fps.mp4). All the tags can be saved as .json file (in order to be re-opened later in DIVA) by clicking on **VR Annotations** in the top-right corner, then on the icon <img src="materials/diva_buttons/diva_tagger_icon.JPG" width="30px" /> and finally on **Export** button.
