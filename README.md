@@ -1,8 +1,12 @@
+<div align="justify">
+ 
 # Voxel Learning in DIVA
 
-Three-dimensional imaging is at the core of medical imaging and is becoming a standard in biological research. There is an increasing need to visualize, analyze and interact with data in a natural three-dimensional context. By combining stereoscopy and motion tracking, commercial virtual reality (VR) headsets provide a solution to this important visualization challenge by allowing any user to view volumetric image stacks in a highly intuitive fashion.
+Three-dimensional imaging is at the core of medical imaging and is becoming a standard in biological research. There is an increasing need to visualize, analyze and interact with data in a natural three-dimensional context. By combining stereoscopy and motion tracking, commercial virtual reality (VR) headsets provide a solution to this important visualization challenge by allowing any user to view volumetric image stacks in a highly intuitive fashion. 
+
 
 **DIVA** (Data Integration and Visualisation in Augmented and virtual environments) software is a user-friendly platform that generates volumetric reconstructions from raw 3D microscopy image stacks and enables efficient visualization and quantification in VR without pre-treatment. We introduce here **Voxel Learning**, a new procedure to quickly annotate and analyze 3D data by combining VR and cloud computing.
+
 
 **Voxel Learning** makes the following contributions to the field:
 1. **Natural interactions with volumetric representations**: VR is leveraged to provide the user an adapted environment, where he can interact intuitively with experimental imaging data.
@@ -56,9 +60,9 @@ Then, importation can be done directy on DIVA using the <img src="materials/diva
 
 ## Improve visualization
 
-<img align="right" src="materials/diva_buttons/diva_tranfer_function_panel.JPG" width="250px" />
+<img align="left" src="materials/diva_buttons/diva_transfer_function_panel.JPG" width="300px" />
 
-Voxel color and opacity can be modify in real-time through a user-friendly transfer function interface composed of the image histogram in gray, one white curve for opacity and one color bar above. Each of them are defined with control points which can be adjusted by dragging with the left mouse button (more details are available on the [DIVA manual user](https://diva.pasteur.fr/wp-content/uploads/2019/09/diva-viewer-manual.pdf)). The basic principle of transfer function is that each pixel of the histogram under the curve will be displayed with the corresponding color in the color bar, and each pixel above the curve will be disable in the 3D and VR view. For multichannel files, each channel possesses its own transfer function which is activated by left clicking on the corresponding channel icon in the volume menu.
+Voxel color and opacity can be modify in real-time through a user-friendly transfer function interface composed of the image histogram in gray, one white curve for opacity and one color bar. Each of them are defined with control points which can be adjusted by dragging with the left mouse button (more details on the [DIVA manual user](https://diva.pasteur.fr/wp-content/uploads/2019/09/diva-viewer-manual.pdf)). The basic principle of transfer function is that each pixel of the histogram under the curve will be displayed with the corresponding color in the color bar, and each pixel above the curve will be disable in the 3D and VR view. For multichannel files, each channel possesses its own transfer function which is activated by left clicking on the corresponding channel icon in the volume menu.
 
 We recommend you to custom this transfer function to see your object of interest and save it as .json file using the **Save button** inorder to re-open it if necessary.
 
@@ -108,3 +112,5 @@ Doing so, the learner trained will be stacked on top of the previous one(s) in o
 
 # Example
 You will find in *materials/data_examples/breast_cancer_image_01/* different applications of **Voxel Learning** on an example CT-scan of breast tumor. Raw data in TIFF format is available with an adapted transfer function to ensure correct visualization, as well as an expert segmentation of the tumor. Tagging file in the format JSON can be loaded to see which tags were used to train the different models. We propose in the *classifiers_56_features* folder all the different learners available, trained and ready to be used for inference, and *composite* the resulting fusion of the original image, the expert segmentation and the inference.
+ 
+ </div>
