@@ -4,12 +4,6 @@ Exchange file throught Django REST API.
 
 ## Install
 
-#### Clone
-
-> $ `git clone --recurse-submodules git@gitlab.pasteur.fr:diva/diva-cloud.git`
-
-> $ `cd diva_django/`  
-
 #### Install Python3 dependencies:
 
 > $ `apt-get update`
