@@ -38,13 +38,22 @@ DIVA is designed to run on the Windows 10 operating system with at least OpenCL 
 # Apply Voxel Learning to your data
 
 ## Load your image
-Voxel learning process processes with Tagged Image File Format (TIFF) image files of 8 or 16-bits.
-If your original data is stored in a DICOM forat (such as in the example data, you have to converted the data to a TIFF format using for example [Fiji]().
+Voxel learning process required Tagged Image File Format (TIFF) image files of 8 or 16-bits. We recommend limiting the size of loaded files to less than 1 GB. Larger files may be scaled or
+cropped via [ImageJ/Fiji]() for example. Multichannel files organized using the ImageJ/Fiji convention are supported. To improve DIVA performance, use images that are located on your disk.
 
-Procedure : 
-attention save image sur disque local
-8 - 16bits, import / button dans DIVA
-converrssion .dcm en tiff +9 liein vers images d'examples 
+If your original data is stored in a DICOM format (such as in the [example](/materials/data_examples/breast_cancer_image_01/raw_data/), you have to convert the data to a TIFF format :
+
+Conversion procedure using ImageJ/Fiji : 
+1) Open DICOM image via *Plugins/bio-Fromats/Bio-Formats* Importer with options :
+    - View stack with : Hyperstack
+    - Group files with similar names : ON
+    - Open all series : ON
+    - All other options are OFF
+2) Improve visualization with *Image/Adjust/Brightness* => Click on "Auto"
+3) Make sure that the format is 8 or 16bit, if not change it in *Image/Type/* 
+4) Save as TIFF format : *File/Save As/Tiff*
+
+Then, importation can be done directy on DIVA using the <img src="\materials\diva_file_explorer_button.JPG" width="100px" /> button with *TIFF* option or by dragging and dropping directly your tiff file. 
 
 ## Improve visualization
 explque vite fait principe
@@ -57,13 +66,13 @@ cf video
 save tags en json
 
 ## Compute locally or remotely
-Once the tagging step is done, open the dedicated **Voxel Learning** panel by clicking on *Advanced* in the top right corner and then on the *Rubik’s cube* pictogram. 
+Once the tagging step is done, open the dedicated **Voxel Learning** panel by clicking on **Advanced** in the top right corner and then on the **Rubik’s cube** pictogram. 
 
-Click on the *double arrow* to choose *Local* or *Cloud* computation. In the latter, you should specify which *Server* and *Port* to be used.
+Click on the **double arrow** to choose **Local** or **Cloud** computation. In the latter, you should specify which **Server** and **Port** to be used.
 
 ## Train your model
-Click on the yellow rectangle *New Classifier* to browse your folder and create a pickle file (*.pckl*).
-Select which learner you want to train by modulating the slider *Strength* from 1 to 10:
+Click on the yellow rectangle **New Classifier** to browse your folder and create a pickle file (**.pckl**).
+Select which learner you want to train by modulating the slider **Strength** from 1 to 10:
 - 1: Random Forest Classifier (RFC)
 - 2: Gradient Boosting Classifier (XGB)
 - 3: Linear classifier with Stochastic Gradient Descent learning (SGD)
@@ -71,16 +80,17 @@ Select which learner you want to train by modulating the slider *Strength* from 
 - 5: Multilayer Perceptron (MLP)
 - 6-10: *Strong Learner* - Gradient boosting classifier with 4 weak classifiers 
 
-Once your model is selected, click on *Train* to launch the training. It will open a new terminal, printing the duration of the training in the terminal at the end of the process.
+Once your model is selected, click on **Train** to launch the training. It will open a new terminal, printing the duration of the training in the terminal at the end of the process.
   
 ## Perform and visualize inference
-Click on the yellow rectangle *Classifier* to browse and select a trained classifier. Press then *Infer* to launch the inference. It will open a new terminal, printing the duration of the inference in the terminal at the end of the process.
+Click on the yellow rectangle **Classifier** to browse and select a trained classifier. Press then **Infer** to launch the inference. It will open a new terminal, printing the duration of the inference in the terminal at the end of the process.
 
-The resulting annotation will appear in a second channel of the original file, that you can select in the top-right corner by clicking on the second coloured icons. It is now possible to modify the transfer function to improve visualization, and to save the annotation by successively clicking on *Volume*, *2* and *Export*.
+The resulting annotation will appear in a second channel of the original file, that you can select in the top-right corner by clicking on the second coloured icons. It is now possible to modify the transfer function to improve visualization, and to save the annotation by successively clicking on **Volume**, **2** and **Export**.
 
-# Iterate the procedure
-If you are not satisfied with the quality of the inference, for instance if too few or too much voxels bear high probability, it is possible to correct the initial tagging and re-train your classifier for as much rounds as you want. To do so, perform another round of tagging and click on the yellow rectangle *Exisiting Classifier* to browse and choose the classifier you seek to improve, adapt the strength according to which learner you want to train, and press *Train*.
-Doing so, the learner trained will be stacked on top of the previous one(s) in order that, upon you click on *Infer*, inference will be perform sequentially for each learner, adding the resulting probability of the former to the features of the latter. Such process enables enhanced robustness of the global inference, but will result in longer computation time.
+## Iterate the procedure
+If you are not satisfied with the quality of the inference, for instance if too few or too much voxels bear high probability, it is possible to correct the initial tagging and re-train your classifier for as much rounds as you want. To do so, perform another round of tagging and click on the yellow rectangle **Exisiting Classifier** to browse and choose the classifier you seek to improve, adapt the strength according to which learner you want to train, and press **Train**.
 
-# Examples 
-You will find
+Doing so, the learner trained will be stacked on top of the previous one(s) in order that, upon you click on **Infer**, inference will be perform sequentially for each learner, adding the resulting probability of the former to the features of the latter. Such process enables enhanced robustness of the global inference, but will result in longer computation time.
+
+# Example
+You will find in *materials/data_examples/breast_cancer_image_01/* different applications of **Voxel Learning** on an example CT-scan of breast tumor. Raw data in TIFF format is available with an adapted transfer function to ensure correct visualization, as well as an expert segmentation of the tumor. Tagging file in the format JSON can be loaded to see which tags were used to train the different models. We propose in the *classifiers_56_features* folder all the different learners available, trained and ready to be used for inference, and *composite* the resulting fusion of the original image, the expert segmentation and the inference.
