@@ -65,25 +65,25 @@ Importation can then be done in DIVA using the <img src="materials/diva_buttons/
 
 Voxel color and opacity can be modified in real-time through a user-friendly transfer function interface composed of the image histogram in gray, one white curve for the opacity and one color bar. Each of them are defined with control points which can be adjusted by dragging with the left mouse button (more details on the [DIVA user manual](https://diva.pasteur.fr/wp-content/uploads/2019/09/diva-viewer-manual.pdf)). The basic principle of the transfer function is that each pixel of the histogram under the curve will be displayed with the corresponding color in the color bar, and each pixel above the curve will be disabled in the 3D and VR view. For multichannel files, each channel possesses its own transfer function which can be activated by left clicking on the corresponding channel icon in the *Volume* panel.
 
-We recommend you to customize this transfer function to highlight your object of interest and save it as .json file using the **Save** button inorder to re-open it if necessary.
+We recommend you to customize this transfer function to highlight your object of interest and save it as .json file using the **Save** button in order to be able to re-open if necessary.
 
 ## Annotate in VR
-Switching to and from VR mode is performed by clicking on <img src="materials/diva_buttons/diva_vr_button.JPG" width="30px" /> in the top-left corner and will automatically launch SteamVR to activate the connected VR headset. Important : this button will not respond if SteamVR is not installed.
-In VR environment, you can iteract with the volume trhough the VR controller (for iteraction details see [DIVA user manual](https://diva.pasteur.fr/wp-content/uploads/2019/09/diva-viewer-manual.pdf)). 
+Switching to and from the VR mode is performed by clicking on <img src="materials/diva_buttons/diva_vr_button.JPG" width="30px" /> in the top-left corner and will automatically launch SteamVR to activate the plugged VR headset. *IMPORTANT* : this button will not respond if SteamVR is not installed.
+In the VR environment, you can iteract with the volume through the VR controller (for interaction details see [DIVA user manual](https://diva.pasteur.fr/wp-content/uploads/2019/09/diva-viewer-manual.pdf)). 
  
- For the tagging step you have to activate the **Clipper Tool** to cut in real-time in the volume and the **Tagger tool**. Tagging is done with the VR controller by clicking on the **+** button and choosing the tag color (cyan for positive tags and magenta for negative tags). A video example is available [here](/materials/article_videos/VideoS2_DIVA_tagging_lung_image01_29-97fps.mp4). All the tags can be saved as .json file (in order to be re-opened later in DIVA) by clicking on **VR Annotations** in the top-right corner, then on the icon <img src="materials/diva_buttons/diva_tagger_icon.JPG" width="20px" /> and finally on **Export** button.
+For the tagging step you have to first activate the **Clipper Tool** to cut in real-time in the volume and then use the **Tagger tool**. Tagging is done with the VR controller by clicking on the **+** button and choosing the tag's color (cyan for positive tags and magenta for negative tags). A video example is available [here](/materials/article_videos/VideoS2_DIVA_tagging_lung_image01_29-97fps.mp4). All the tags can be saved as .json file (in order to be re-opened later in DIVA) by clicking on **VR Annotations** in the top-right corner, then on the icon <img src="materials/diva_buttons/diva_tagger_icon.JPG" width="20px" /> and on the **Export** button.
 
 ## Compute locally or remotely
-Once the tagging step is done, open the dedicated **Voxel Learning** panel by clicking on **Advanced** in the top right corner and then on the pictogram <img src="materials/diva_buttons/diva_voxel_learning_button.JPG" width="30px" />. 
+Once the tagging step is done, open the dedicated **Voxel Learning** panel by clicking on **Advanced** in the top right corner and then on the following pictogram <img src="materials/diva_buttons/diva_voxel_learning_button.JPG" width="30px" />. 
 
-Click on <img src="materials/diva_buttons/diva_double_arrow_button.JPG" width="30px" />. to choose **Local** or **Cloud** computation. In the latter, you should specify which **Server** and **Port** to be used.
+Click on <img src="materials/diva_buttons/diva_double_arrow_button.JPG" width="30px" /> to choose **Local** or **Cloud** computation. In the latter, you should specify which **Server** and **Port** you want to use.
 
 
 ## Train your model
 
 <img align="right" src="materials/diva_buttons/diva_train_panel.JPG" width="250px" />
 
-Click on the yellow rectangle **New Classifier** to browse your folder and create a pickle file (**.pckl**).
+Click on the yellow rectangle labelled **New Classifier** to browse your folder and create a pickle file (**.pckl**).
 
 Select which learner you want to train by modulating the slider **Strength** from 1 to 10:
 
@@ -94,7 +94,7 @@ Select which learner you want to train by modulating the slider **Strength** fro
  - 5: Multilayer Perceptron (MLP)
  - 6: *Strong Learner* - Gradient boosting classifier with 4 weak classifiers 
 
-Once your model is selected, click on **Train** to launch the training. It will open a new terminal, printing the duration of the training in the terminal at the end of the process.
+Once your model is selected, click on **Train** to launch the training. It will open a new terminal to print the duration of the training at the end of the process.
   
 ## Perform and visualize inference
 
