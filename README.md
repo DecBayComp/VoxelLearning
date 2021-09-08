@@ -40,8 +40,10 @@ DIVA is designed to run on the Windows 10 operating system with at least OpenCL 
 5. Install DIVA : choose in the *diva_voxel_learning* folder the version of the updated software you want to use : one uses 56 features for voxel learning (see details in the article) and the other uses only pixel neighborhood information. Load the corresponding folder and execute DIVA by double-clicking on the provided *diva.exe* file. DIVA will take a moment to load as it allocates memory (roughly 20–30 seconds).
 
 # Apply Voxel Learning to your data
+ 
+For a complete voxel learning pipeline example see this [video](/materials/article_videos/VideoS1_DIVA_learning_pipeline.mp4). 
 
-## Load your image
+ ## Load your image
 Voxel learning process requires Tagged Image File Format (TIFF) image files of 8 or 16-bits. We recommend limiting the size of loaded files to less than 1 GB. Larger files may be scaled or cropped via [ImageJ/Fiji](https://imagej.net/software/fiji/downloads) for example. Multichannel files organized using the ImageJ/Fiji convention are supported. To improve DIVA performance, use images that are located on your disk.
 
 If your original data is stored in a DICOM format (such as in the [example](/materials/data_examples/breast_cancer_image_01/raw_data/), you have to convert the data to a TIFF format :
@@ -66,12 +68,11 @@ Voxel color and opacity can be modify in real-time through a user-friendly trans
 
 We recommend you to custom this transfer function to see your object of interest and save it as .json file using the **Save button** inorder to re-open it if necessary.
 
-cf video
-
 ## Annotate in VR
 Switching to and from VR mode is performed by clicking on the button ICON at the top left corner and will automatically launch SteamVR to activate the connected VR headset. Important : This button will not respond if SteamVR is not installed.
 
-
+see this [video](/materials/article_videos/VideoS2_DIVA_tagging_lung_image01_29-97fps.mp4) for the tagging step. 
+ 
 steps in VR / butoon / princpe
 cf video
 save tags en json
@@ -103,7 +104,7 @@ Once your model is selected, click on **Train** to launch the training. It will 
 
 Click on the yellow rectangle **Classifier** to browse and select a trained classifier. Press then <img src="materials/diva_buttons/diva_infer_button.JPG" width="30px" /> to launch the inference. It will open a new terminal, printing the duration of the inference in the terminal at the end of the process.
 
-The resulting annotation will appear in a second channel of the original file, that you can select in the top-right corner by clicking on the second coloured icons <img src="materials/diva_buttons/diva_coloured_icons.JPG" width="80px" />. It is now possible to modify the transfer function to improve visualization, and to save the annotation by successively clicking on **Volume**, **2** and **Export**.
+The resulting annotation will appear in a second channel of the original file, that you can select in the top-right corner by clicking on the second coloured icons <img src="materials/diva_buttons/diva_coloured_icons.JPG" width="80px" /> (see [video](/materials/article_videos/VideoS3_DIVA_compare_result_lung_image02_30fps_720p30.mp4). It is now possible to modify the transfer function to improve visualization, and to save the annotation by successively clicking on **Volume**, **2** and **Export**.
 
 ## Iterate the procedure
 If you are not satisfied with the quality of the inference, for instance if too few or too much voxels bear high probability, it is possible to correct the initial tagging and re-train your classifier for as much rounds as you want. To do so, perform another round of tagging and click on the yellow rectangle **Exisiting Classifier** to browse and choose the classifier you seek to improve, adapt the strength according to which learner you want to train, and press **Train**.
