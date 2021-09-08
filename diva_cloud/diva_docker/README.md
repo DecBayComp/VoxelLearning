@@ -1,4 +1,4 @@
-<img src="/diva_docker/media/diva_docker.png" data-canonical-src="/diva_docker/media/diva_docker.png" width="217" height="155" />
+<img src="/diva_cloud/diva_docker/media/diva_docker.png" data-canonical-src="/diva_cloud/diva_docker/media/diva_docker.png" width="217" height="155" />
 
 # diva_docker V0.3
 
@@ -35,17 +35,6 @@ Make sure Docker is installed on your system:
   - On [Ubuntu](https://docs.docker.com/engine/install/ubuntu/)
   - On [Debian](https://docs.docker.com/engine/install/debian/)
   
-
-## Clone
-
-> `git clone --recurse-submodules git@gitlab.pasteur.fr:diva/diva-cloud.git`
-
-> `cd diva_django/`  
-
-#### If already cloned, get changes
-
-> `git pull --recurse-submodules`
-
 
 ## Install Automatically
 
@@ -161,5 +150,5 @@ Change it on `diva_cloud/settings.py`
 
 ## API interactions use cases:
 
-![DIVA REST SCHEM](/diva_docker/media/DjangoDIVA-UseCase.png)
+![DIVA REST SCHEM](/diva_cloud/diva_docker/media/DjangoDIVA-UseCase.png)
 
