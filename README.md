@@ -32,7 +32,7 @@ DIVA is designed to run on the Windows 10 operating system with at least OpenCL 
 2. Install [Python 3.7.4](https://www.python.org/downloads/windows/)
 3. Install Python packages 
 > $ `pip install -r requirements.txt` use this [requirements.txt file](/diva_cloud/diva_django/requirements.txt)
-4. Install DIVA-cloud (only for remote computation) : load the [diva_dango](/diva_cloud/diva_django/) and [diva_docker](/diva_cloud/diva_docker) folders and follow instructions on README files.
+4. Install DIVA Cloud (only for remote computation) : load the [diva_dango](/diva_cloud/diva_django/) and [diva_docker](/diva_cloud/diva_docker) folders and follow instructions on README files.
 
 + UPLOAD EXE QITHOU MAC ADRESSE NEEDED
 
