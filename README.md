@@ -60,7 +60,7 @@ Then, importation can be done directy on DIVA using the <img src="materials/diva
 
 ## Improve visualization
 
-<img align="left" src="materials/diva_buttons/diva_transfer_function_panel.JPG" width="300px" />
+<img align="left" src="materials/diva_buttons/diva_transfer_function_panel.JPG" width="350px" />
 
 Voxel color and opacity can be modify in real-time through a user-friendly transfer function interface composed of the image histogram in gray, one white curve for opacity and one color bar. Each of them are defined with control points which can be adjusted by dragging with the left mouse button (more details on the [DIVA manual user](https://diva.pasteur.fr/wp-content/uploads/2019/09/diva-viewer-manual.pdf)). The basic principle of transfer function is that each pixel of the histogram under the curve will be displayed with the corresponding color in the color bar, and each pixel above the curve will be disable in the 3D and VR view. For multichannel files, each channel possesses its own transfer function which is activated by left clicking on the corresponding channel icon in the volume menu.
 
@@ -94,7 +94,7 @@ Select which learner you want to train by modulating the slider **Strength** fro
  - 3: Linear classifier with Stochastic Gradient Descent learning (SGD)
  - 4: Naïve Bayes Classifier (NBC)
  - 5: Multilayer Perceptron (MLP)
- - 6-10: *Strong Learner* - Gradient boosting classifier with 4 weak classifiers 
+ - 6: *Strong Learner* - Gradient boosting classifier with 4 weak classifiers 
 
 Once your model is selected, click on **Train** to launch the training. It will open a new terminal, printing the duration of the training in the terminal at the end of the process.
   
@@ -102,7 +102,7 @@ Once your model is selected, click on **Train** to launch the training. It will 
 
 Click on the yellow rectangle **Classifier** to browse and select a trained classifier. Press then <img src="materials/diva_buttons/diva_infer_button.JPG" width="30px" /> to launch the inference. It will open a new terminal, printing the duration of the inference in the terminal at the end of the process.
 
-The resulting annotation will appear in a second channel of the original file, that you can select in the top-right corner by clicking on the second coloured icons <img src="materials/diva_buttons/diva_coloured_icons.JPG" width="80px" /> (see [video](/materials/article_videos/VideoS3_DIVA_compare_result_lung_image02_30fps_720p30.mp4). It is now possible to modify the transfer function to improve visualization, and to save the annotation by successively clicking on **Volume**, **2** and **Export**.
+The resulting annotation will appear in a second channel of the original file, that you can select in the top-right corner by clicking on the second coloured icons <img src="materials/diva_buttons/diva_coloured_icons.JPG" width="80px" /> (see [video](/materials/article_videos/VideoS3_DIVA_compare_result_lung_image02_30fps_720p30.mp4)). It is now possible to modify the transfer function to improve visualization, and to save the annotation by successively clicking on **Volume**, **2** and **Export**.
 
 ## Iterate the procedure
 If you are not satisfied with the quality of the inference, for instance if too few or too much voxels bear high probability, it is possible to correct the initial tagging and re-train your classifier for as much rounds as you want. To do so, perform another round of tagging and click on the yellow rectangle **Exisiting Classifier** to browse and choose the classifier you seek to improve, adapt the strength according to which learner you want to train, and press **Train**.
