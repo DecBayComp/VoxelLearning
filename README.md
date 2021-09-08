@@ -19,8 +19,6 @@ For more information, read the following paper: REF
   * [Annotate in VR](#annotate-in-vr)
   * [Compute locally or remotely](#compute-locally-or-remotely)
   * [Train your model](#train-your-model)
-    - [Choose your model](#choose-your-model)
-    - [Manage your models](#manage-your-models)
   * [Perform and visualize inference](#perform-and-visualize-inference)
 - [Iterate the procedure](#iterate-the-procedure)
 - [Examples](#examples)
@@ -34,8 +32,9 @@ DIVA is designed to run on the Windows 10 operating system with at least OpenCL 
 3. Install Python librairies : install all librairies of the *requirements.txt* file in "blabla" folder for local computation or in *blablabl* folder for remote computation. 
 4. Install DIVA-cloud (only for remote computation) : load the *diva-django* and *diva-docker folder*. Follow instructions on (LINK READ ME DOCKER AND DKANGO)
 
-
- OpenCL versions > 2.0
+SEE procedure install dans diva python pour ref
++ NEED CLEAN FOLDER DIVA PYTHON / DOCKER
++ UPLOAD EXE QITHOU MAC ADRESSE NEEDED
 
 docker/clouf cf readme ( lmodifier readme lien vers gitlab)
 
@@ -43,29 +42,39 @@ docker/clouf cf readme ( lmodifier readme lien vers gitlab)
 
 ## Load your image
 8 - 16bits, import / button dans DIVA
+converrssion .dcm en tiff +9 liein vers images d'examples 
 
 ## Improve visualization
-explque vite fait 
+explque vite fait principe
 save tf
+cf video
 
 ## Annotate in VR
-steps in VR 
-save tags
+steps in VR / butoon / princpe
+cf video
+save tags en json
 
 ## Compute locally or remotely
-local ou cloud
- et why 
- 
-## Train your model
+Once the tagging step is done, open the dedicated **Voxel Learning** panel by clicking on *Advanced* in the top right corner and then on the *Rubik’s cube* pictogram. 
 
-### Choose your model
-    (liste models correspondan a strength)
-### Manage your models
-  export / save pckl
+Click on the *double arrow* to choose *Local* or *Cloud* computation. In the latter, you should specify which *Server* and *Port* to be used.
+
+## Train your model
+Click on the yellow rectangle *New Classifier* to browse your folder and create a pickle file (*.pckl*).
+Select which learner you want to train by modulating the slider *Strength* from 1 to 10:
+- 1: Random Forest Classifier (RFC)
+- 2: Gradient Boosting Classifier (XGB)
+- 3: Linear classifier with Stochastic Gradient Descent learning (SGD)
+- 4: Naïve Bayes Classifier (NBC)
+- 5: Multilayer Perceptron (MLP)
+- 6-10: *Strong Learner* - Gradient boosting classifier with 4 weak classifiers 
+
+Once your model is selected, click on *Train* to launch the training. It will open a new terminal, printing the duration of the training in the terminal at the end of the process.
   
 ## Perform and visualize inference
-open classifier / 
-export save => open 2nd channel => change TF
+Click on the yellow rectangle *Classifier* to browse and select a trained classifier. Press then *Infer* to launch the inference. It will open a new terminal, printing the duration of the inference in the terminal at the end of the process.
+
+The resulting annotation will appear in a second channel of the original file, that you can select in the top-right corner by clicking on the second coloured icons. It is now possible to modify the transfer function to improve visualization, and to save the annotation by successively clicking on *Volume*, *2* and *Export*.
 
 # Iterate the procedure
 correctin tag + retrained
