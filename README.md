@@ -46,14 +46,12 @@ For a complete voxel learning pipeline example see this [video](/materials/artic
  ## Load your image
 Voxel learning process requires Tagged Image File Format (TIFF) image files of 8 or 16-bits. We recommend limiting the size of loaded files to less than 1 GB. Larger files may be scaled or cropped via [ImageJ/Fiji](https://imagej.net/software/fiji/downloads) for example. Multichannel files organized using the ImageJ/Fiji convention are supported. To improve DIVA performance, use images that are located on your disk.
 
-If your original data is stored in a DICOM format (such as in the [example](/materials/data_examples/breast_cancer_image_01/raw_data/), you have to convert the data to a TIFF format :
-
-Conversion procedure using ImageJ/Fiji : 
+If your original data is stored in a DICOM format (such as in the [example](/materials/data_examples/breast_cancer_image_01/raw_data/), you have to convert the data to a TIFF format with ImageJ/Fiji for example : 
 1) Open DICOM image via *Plugins/bio-Fromats/Bio-Formats* Importer with options :
-    - View stack with : Hyperstack
-    - Group files with similar names : ON
-    - Open all series : ON
-    - All other options are OFF
+    1) View stack with : Hyperstack
+    2) Group files with similar names : ON
+    3) Open all series : ON
+    4) All other options are OFF
 2) Improve visualization with *Image/Adjust/Brightness* => Click on "Auto"
 3) Make sure that the format is 8 or 16bit, if not change it in *Image/Type/* 
 4) Save as TIFF format : *File/Save As/Tiff*
