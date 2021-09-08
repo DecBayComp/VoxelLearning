@@ -4,12 +4,6 @@ Exchange file throught Django REST API.
 
 ## Install
 
-#### Clone
-
-> $ `git clone --recurse-submodules git@gitlab.pasteur.fr:diva/diva-cloud.git`
-
-> $ `cd diva_django/`  
-
 #### Install Python3 dependencies:
 
 > $ `apt-get update`
@@ -108,21 +102,21 @@ Exchange file throught Django REST API.
 
 ## API Use Case:
 
-![DIVA USE CASE](/diva_django/media/DjangoDIVA-UseCase.png)
+![DIVA USE CASE](/diva_cloud/diva_django/media/DjangoDIVA-UseCase.png)
 
 ---
 
 ##  DIVA interactions with "DIVACloud":
 
-![DIVA CLOUD ACTION](/diva_django/media/DjangoDIVA-Interactions.png)
+![DIVA CLOUD ACTION](/diva_cloud/diva_django/media/DjangoDIVA-Interactions.png)
 
 ---
 
 ## API database model:
 
-![DIVA DATABASE MODEL](/diva_django/media/DjangoDIVA-DBschem.png)
+![DIVA DATABASE MODEL](/diva_cloud/diva_django/media/DjangoDIVA-DBschem.png)
 
 ## Django repository:
 
-![DIVA DJANGO REPO](/diva_django/media/DjangoDIVA-DJANGO.png)
+![DIVA DJANGO REPO](/diva_cloud/diva_django/media/DjangoDIVA-Interactions.png)
 

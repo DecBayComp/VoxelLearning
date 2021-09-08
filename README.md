@@ -28,20 +28,20 @@ For more information, read the following paper: REF preprint ??
 # Installation and Requirements
 DIVA is designed to run on the Windows 10 operating system with at least OpenCL 2.0. We recommend using DIVA with an Intel i5 processor equivalent or better, at least 4GB RAM of memory, 300 MB of storage and a NVIDIA GeForce 900 Series or better Graphical Processing Unit (GPU). DIVA can be used with and witout VR headset and is compatible with HTC Vive, HTC Vive Pro, Oculus Rift, Oculus Rift S, Oculus Quest (with Link Cable) and Windows Mixed Reality headsets. For each type of VR headsets you have to download the corresponding installation software (such as [ViveSetup](https://www.vive.com/fr/setup/pc-vr/) or [Oculus](https://www.oculus.com/setup/?locale=fr_FR)). In addition, [SteamVR](https://www.steamvr.com/fr/) is required to use VR functions. You can find DIVA user manual and all the information about the legacy software [here](https://diva.pasteur.fr/). 
 
-1. Install DIVA : choose in the *DIVA - Voxel Learning* folder the version of the updated software you want to use : one uses 56 features for voxel learning (see details in the artcle) and the other uses only pixel neighborhood information. Load the corresponding folder and execute DIVA by double-clicking on the provided *diva.exe* file. 
-2. Install [Python 3.7.4](https://www.python.org/downloads/windows/)
-3. Install Python librairies : install all librairies of the *requirements.txt* file in "DIVA - Voxel Learning" folder for local computation or in *DIVA - Cloud* folder for remote computation. 
-4. Install DIVA-cloud (only for remote computation) : load the *diva-django* and *diva-docker folder*. Follow instructions on (LINK READ ME DOCKER AND DKANGO)
-
-SEE procedure install dans diva python pour ref
-+ NEED CLEAN FOLDER DIVA PYTHON / DOCKER
-+ UPLOAD EXE QITHOU MAC ADRESSE NEEDED
-
-docker/clouf cf readme ( lmodifier readme lien vers gitlab)
+1. Install [Python 3.7.4](https://www.python.org/downloads/windows/).
+2. Install Python packages.
+> $ `pip install -r requirements.txt` use this [requirements.txt file](/diva_cloud/diva_django/requirements.txt)
+3. Install DIVA Cloud (only for remote computation) : load the [diva_dango](/diva_cloud/diva_django/) and [diva_docker](/diva_cloud/diva_docker) folders and follow instructions on README files.
+4. Launch SteamVR before DIVA software if you want to use VR environment.
+5. Install DIVA : choose in the *diva_voxel_learning* folder the version of the updated software you want to use : one uses 56 features for voxel learning (see details in the article) and the other uses only pixel neighborhood information. Load the corresponding folder and execute DIVA by double-clicking on the provided *diva.exe* file. DIVA will take a moment to load as it allocates memory (roughly 20–30 seconds).
 
 # Apply Voxel Learning to your data
 
 ## Load your image
+Voxel learning process processes with Tagged Image File Format (TIFF) image files of 8 or 16-bits.
+If your original data is stored in a DICOM forat (such as in the example data, you have to converted the data to a TIFF format using for example [Fiji]().
+
+Procedure : 
 attention save image sur disque local
 8 - 16bits, import / button dans DIVA
 converrssion .dcm en tiff +9 liein vers images d'examples 
@@ -79,7 +79,8 @@ Click on the yellow rectangle *Classifier* to browse and select a trained classi
 The resulting annotation will appear in a second channel of the original file, that you can select in the top-right corner by clicking on the second coloured icons. It is now possible to modify the transfer function to improve visualization, and to save the annotation by successively clicking on *Volume*, *2* and *Export*.
 
 # Iterate the procedure
-correctin tag + retrained
+If you are not satisfied with the quality of the inference, for instance if too few or too much voxels bear high probability, it is possible to correct the initial tagging and re-train your classifier for as much rounds as you want. To do so, perform another round of tagging and click on the yellow rectangle *Exisiting Classifier* to browse and choose the classifier you seek to improve, adapt the strength according to which learner you want to train, and press *Train*.
+Doing so, the learner trained will be stacked on top of the previous one(s) in order that, upon you click on *Infer*, inference will be perform sequentially for each learner, adding the resulting probability of the former to the features of the latter. Such process enables enhanced robustness of the global inference, but will result in longer computation time.
 
 # Examples 
-Exemples dossier complets avce une image + modle ect...
+You will find
