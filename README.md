@@ -80,4 +80,4 @@ If you are not satisfied with the quality of the inference, for instance if too 
 Doing so, the learner trained will be stacked on top of the previous one(s) in order that, upon you click on *Infer*, inference will be perform sequentially for each learner, adding the resulting probability of the former to the features of the latter. Such process enables enhanced robustness of the global inference, but will result in longer computation time.
 
 # Examples 
-Exemples dossier complets avce une image + modle ect...
+You will find
