@@ -38,8 +38,7 @@ DIVA is designed to run on the Windows 10 operating system with at least OpenCL 
 # Apply Voxel Learning to your data
 
 ## Load your image
-Voxel learning process required Tagged Image File Format (TIFF) image files of 8 or 16-bits. We recommend limiting the size of loaded files to less than 1 GB. Larger files may be scaled or
-cropped via [ImageJ/Fiji](https://imagej.net/software/fiji/downloads) for example. Multichannel files organized using the ImageJ/Fiji convention are supported. To improve DIVA performance, use images that are located on your disk.
+Voxel learning process requires Tagged Image File Format (TIFF) image files of 8 or 16-bits. We recommend limiting the size of loaded files to less than 1 GB. Larger files may be scaled or cropped via [ImageJ/Fiji](https://imagej.net/software/fiji/downloads) for example. Multichannel files organized using the ImageJ/Fiji convention are supported. To improve DIVA performance, use images that are located on your disk.
 
 If your original data is stored in a DICOM format (such as in the [example](/materials/data_examples/breast_cancer_image_01/raw_data/), you have to convert the data to a TIFF format :
 
@@ -53,14 +52,22 @@ Conversion procedure using ImageJ/Fiji :
 3) Make sure that the format is 8 or 16bit, if not change it in *Image/Type/* 
 4) Save as TIFF format : *File/Save As/Tiff*
 
-Then, importation can be done directy on DIVA using the <img src="materials/diva_buttons/diva_file_explorer_button.JPG" width="20px" /> button with *TIFF* option or by dragging and dropping directly your tiff file. 
+Then, importation can be done directy on DIVA using the <img src="materials/diva_buttons/diva_file_explorer_button.JPG" width="20px" /> button with *TIFF* option (at the left top corner) which open a file browser or by dragging and dropping directly your tiff file. 
 
 ## Improve visualization
-explque vite fait principe
-save tf
+
+<img align="right" src="materials/diva_buttons/diva_tranfer_function_panel.JPG" width="250px" />
+
+Voxel color and opacity can be modify in real-time through a user-friendly transfer function interface composed of the image histogram in gray, one white curve for opacity and one color bar above. Each of them are defined with control points which can be adjusted by dragging with the left mouse button (more details are available on the [DIVA manual user](https://diva.pasteur.fr/wp-content/uploads/2019/09/diva-viewer-manual.pdf)). The basic principle of transfer function is that each pixel of the histogram under the curve will be displayed with the corresponding color in the color bar, and each pixel above the curve will be disable in the 3D and VR view. For multichannel files, each channel possesses its own transfer function which is activated by left clicking on the corresponding channel icon in the volume menu.
+
+We recommend you to custom this transfer function to see your object of interest and save it as .json file using the **Save button** inorder to re-open it if necessary.
+
 cf video
 
 ## Annotate in VR
+Switching to and from VR mode is performed by clicking on the button ICON at the top left corner and will automatically launch SteamVR to activate the connected VR headset. Important : This button will not respond if SteamVR is not installed.
+
+
 steps in VR / butoon / princpe
 cf video
 save tags en json
