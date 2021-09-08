@@ -53,7 +53,7 @@ Conversion procedure using ImageJ/Fiji :
 3) Make sure that the format is 8 or 16bit, if not change it in *Image/Type/* 
 4) Save as TIFF format : *File/Save As/Tiff*
 
-Then, importation can be done directy on DIVA using the <img src="\materials\diva_file_explorer_button.JPG" width="100px" /> button with *TIFF* option or by dragging and dropping directly your tiff file. 
+Then, importation can be done directy on DIVA using the <img src="materials/diva_buttons/diva_file_explorer_button.JPG" width="20px" /> button with *TIFF* option or by dragging and dropping directly your tiff file. 
 
 ## Improve visualization
 explque vite fait principe
@@ -66,24 +66,34 @@ cf video
 save tags en json
 
 ## Compute locally or remotely
-Once the tagging step is done, open the dedicated **Voxel Learning** panel by clicking on **Advanced** in the top right corner and then on the **Rubik’s cube** pictogram. 
+Once the tagging step is done, open the dedicated **Voxel Learning** panel by clicking on **Advanced** in the top right corner and then on the pictogram <img src="materials/diva_buttons/diva_voxel_learning_button.JPG" width="30px" />. 
 
-Click on the **double arrow** to choose **Local** or **Cloud** computation. In the latter, you should specify which **Server** and **Port** to be used.
+Click on <img src="materials/diva_buttons/diva_double_arrow_button.JPG" width="20px" />. to choose **Local** or **Cloud** computation. In the latter, you should specify which **Server** and **Port** to be used.
+
 
 ## Train your model
+<img align="left" src="materials/diva_buttons/diva_train_panel.JPG" width="300px" />
 Click on the yellow rectangle **New Classifier** to browse your folder and create a pickle file (**.pckl**).
+   
+
+
+<br />      
+<br />
+<br />
 Select which learner you want to train by modulating the slider **Strength** from 1 to 10:
-- 1: Random Forest Classifier (RFC)
-- 2: Gradient Boosting Classifier (XGB)
-- 3: Linear classifier with Stochastic Gradient Descent learning (SGD)
-- 4: Naïve Bayes Classifier (NBC)
-- 5: Multilayer Perceptron (MLP)
-- 6-10: *Strong Learner* - Gradient boosting classifier with 4 weak classifiers 
+
+ - 1: Random Forest Classifier (RFC)
+ - 2: Gradient Boosting Classifier (XGB)
+ - 3: Linear classifier with Stochastic Gradient Descent learning (SGD)
+ - 4: Naïve Bayes Classifier (NBC)
+ - 5: Multilayer Perceptron (MLP)
+ - 6-10: *Strong Learner* - Gradient boosting classifier with 4 weak classifiers 
 
 Once your model is selected, click on **Train** to launch the training. It will open a new terminal, printing the duration of the training in the terminal at the end of the process.
   
 ## Perform and visualize inference
-Click on the yellow rectangle **Classifier** to browse and select a trained classifier. Press then **Infer** to launch the inference. It will open a new terminal, printing the duration of the inference in the terminal at the end of the process.
+
+Click on the yellow rectangle **Classifier** to browse and select a trained classifier. Press then <img src="materials/diva_buttons/diva_infer_button.JPG" width="20px" /> to launch the inference. It will open a new terminal, printing the duration of the inference in the terminal at the end of the process.
 
 The resulting annotation will appear in a second channel of the original file, that you can select in the top-right corner by clicking on the second coloured icons. It is now possible to modify the transfer function to improve visualization, and to save the annotation by successively clicking on **Volume**, **2** and **Export**.
 
