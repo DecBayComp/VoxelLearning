@@ -65,7 +65,7 @@ Importation can then be done in DIVA using the <img src="materials/diva_buttons/
 
 Voxel color and opacity can be modified in real-time through a user-friendly transfer function interface composed of the image histogram in gray, one white curve for the opacity and one color bar. Each of them are defined with control points which can be adjusted by dragging with the left mouse button (more details on the [DIVA user manual](https://diva.pasteur.fr/wp-content/uploads/2019/09/diva-viewer-manual.pdf)). The basic principle of the transfer function is that each pixel of the histogram under the curve will be displayed with the corresponding color in the color bar, and each pixel above the curve will be disabled in the 3D and VR view. For multichannel files, each channel possesses its own transfer function which can be activated by left clicking on the corresponding channel icon in the *Volume* panel.
 
-We recommend you to custom this transfer function to see your object of interest and save it as .json file using the **Save button** inorder to re-open it if necessary.
+We recommend you to customize this transfer function to highlight your object of interest and save it as .json file using the **Save** button inorder to re-open it if necessary.
 
 ## Annotate in VR
 Switching to and from VR mode is performed by clicking on <img src="materials/diva_buttons/diva_vr_button.JPG" width="30px" /> in the top-left corner and will automatically launch SteamVR to activate the connected VR headset. Important : this button will not respond if SteamVR is not installed.
