@@ -2,7 +2,7 @@
 
 # diva_docker V0.3
 
-Make [diva_django](/diva_django) working on Docker
+Make [diva_django](/diva_cloud/diva_django) working on Docker
 
 Exchange file throught Django REST API.
 
