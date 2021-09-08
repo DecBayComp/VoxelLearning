@@ -85,7 +85,7 @@ Click on <img src="materials/diva_buttons/diva_double_arrow_button.JPG" width="3
 
 Click on the yellow rectangle labelled **New Classifier** to browse your folder and create a pickle file (**.pckl**).
 
-Select which learner you want to train by modulating the slider **Strength** from 1 to 10:
+Select which learner you want to train by modulating the slider **Strength** from 1 to 6:
 
  - 1: Random Forest Classifier (RFC)
  - 2: Gradient Boosting Classifier (XGB)
