@@ -76,7 +76,8 @@ Click on the yellow rectangle *Classifier* to browse and select a trained classi
 The resulting annotation will appear in a second channel of the original file, that you can select in the top-right corner by clicking on the second coloured icons. It is now possible to modify the transfer function to improve visualization, and to save the annotation by successively clicking on *Volume*, *2* and *Export*.
 
 # Iterate the procedure
-correctin tag + retrained
+If you are not satisfied with the quality of the inference, for instance if too few or too much voxels bear high probability, it is possible to correct the initial tagging and re-train your classifier for as much rounds as you want. To do so, perform another round of tagging and click on the yellow rectangle *Exisiting Classifier* to browse and choose the classifier you seek to improve, adapt the strength according to which learner you want to train, and press *Train*.
+Doing so, the learner trained will be stacked on top of the previous one(s) in order that, upon you click on *Infer*, inference will be perform sequentially for each learner, adding the resulting probability of the former to the features of the latter. Such process enables enhanced robustness of the global inference, but will result in longer computation time.
 
 # Examples 
 Exemples dossier complets avce une image + modle ect...
