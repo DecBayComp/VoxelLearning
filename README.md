@@ -57,26 +57,26 @@ If your original data is stored in a DICOM format (such as in the [example](/mat
 3) Make sure that the format is 8 or 16bit, if not change it in *Image/Type/* 
 4) Save as TIFF format : *File/Save As/Tiff*
 
-Importation can then be done in DIVA using the <img src="materials/diva_buttons/diva_file_explorer_button.JPG" width="20px" /> button with the *TIFF* option (in the top-left corner) which opens a file browser or by drag-and-dropping your TIFF file direclty. 
+Importation can then be done in DIVA using the <img src="materials/diva_buttons/file-o.png" width="20px" /> button with the *TIFF* option (in the top-left corner) which opens a file browser or by drag-and-dropping your TIFF file direclty. 
 
 ## Improve visualization
 
 <img align="left" src="materials/diva_buttons/diva_transfer_function_panel.JPG" width="350px" />
 
-Voxel color and opacity can be modified in real-time through a user-friendly transfer function interface composed of the image histogram in gray, one white curve for the opacity and one color bar. Each of them are defined with control points which can be adjusted by dragging with the left mouse button (more details on the [DIVA user manual](https://diva.pasteur.fr/wp-content/uploads/2019/09/diva-viewer-manual.pdf)). The basic principle of the transfer function is that each pixel of the histogram under the curve will be displayed with the corresponding color in the color bar, and each pixel above the curve will be disabled in the 3D and VR view. For multichannel files, each channel possesses its own transfer function which can be activated by left clicking on the corresponding channel icon in the *Volume* panel.
+Voxel color and opacity can be modified in real-time through a user-friendly transfer function interface located in the **Volume** panel under <img src="materials/diva_buttons/channel1.png" width="30px" /> or <img src="materials/diva_buttons/channel2.png" width="30px" /> icon. This interface is composed of the image histogram in gray, one white curve for the opacity and one color bar. Each of them are defined with control points which can be adjusted by dragging with the left mouse button (more details on the [DIVA user manual](https://diva.pasteur.fr/wp-content/uploads/2019/09/diva-viewer-manual.pdf)). The basic principle of the transfer function is that each pixel of the histogram under the curve will be displayed with the corresponding color in the color bar, and each pixel above the curve will be disabled in the 3D and VR view. For multichannel files, each channel possesses its own transfer function which can be activated by left clicking on the corresponding channel icon in the *Volume* panel.
 
 We recommend you to customize this transfer function to highlight your object of interest and save it as .json file using the **Save** button in order to be able to re-open if necessary.
 
 ## Annotate in VR
-Switching to and from the VR mode is performed by clicking on <img src="materials/diva_buttons/diva_vr_button.JPG" width="30px" /> in the top-left corner and will automatically launch SteamVR to activate the plugged VR headset. *IMPORTANT* : this button will not respond if SteamVR is not installed.
+Switching to and from the VR mode is performed by clicking on <img src="materials/diva_buttons/vr.png" width="30px" /> in the top-left corner and will automatically launch SteamVR to activate the plugged VR headset. *IMPORTANT* : this button will not respond if SteamVR is not installed.
 In the VR environment, you can iteract with the volume through the VR controller (for interaction details see [DIVA user manual](https://diva.pasteur.fr/wp-content/uploads/2019/09/diva-viewer-manual.pdf)). 
  
-For the tagging step you have to first activate the **Clipper Tool** to cut in real-time in the volume and then use the **Tagger tool**. Tagging is done with the VR controller by clicking on the **+** button and choosing the tag's color (cyan for positive tags and magenta for negative tags). A video example is available [here](/materials/article_videos/VideoS2_DIVA_tagging_lung_image01_29-97fps.mp4). All the tags can be saved as .json file (in order to be re-opened later in DIVA) by clicking on **VR Annotations** in the top-right corner, then on the icon <img src="materials/diva_buttons/diva_tagger_icon.JPG" width="20px" /> and on the **Export** button.
+For the tagging step you have to first activate the **Clipper Tool** to cut in real-time in the volume and then use the **Tagger tool**. Tagging is done with the VR controller by clicking on the <img src="materials/diva_buttons/plus.png" width="30px" /> button and choosing the tag's color (cyan for positive tags and magenta for negative tags). A video example is available [here](/materials/article_videos/VideoS2_DIVA_tagging_lung_image01_29-97fps.mp4). All the tags can be saved as .json file (in order to be re-opened later in DIVA) by clicking on **VR Annotations** in the top-right corner, then on the icon <img src="materials/diva_buttons/tagging.png" width="20px" /> and on the **Export** button.
 
 ## Compute locally or remotely
-Once the tagging step is done, open the dedicated **Voxel Learning** panel by clicking on **Advanced** in the top right corner and then on the following pictogram <img src="materials/diva_buttons/diva_voxel_learning_button.JPG" width="30px" />. 
+Once the tagging step is done, open the dedicated **Voxel Learning** panel by clicking on **Advanced** in the top right corner and then on the following pictogram <img src="materials/diva_buttons/features.png" width="30px" />. 
 
-Click on <img src="materials/diva_buttons/diva_double_arrow_button.JPG" width="30px" /> to choose **Local** or **Cloud** computation. In the latter, you should specify which **Server** and **Port** you want to use.
+Click on <img src="materials/diva_buttons/communication.png" width="30px" /> to choose **Local** or **Cloud** computation. In the latter, you should specify which **Server** and **Port** you want to use.
 
 
 ## Train your model
@@ -98,9 +98,9 @@ Once your model is selected, click on **Train** to launch the training. It will 
   
 ## Perform and visualize inference
 
-Click on the yellow rectangle **Classifier** to browse and select a trained classifier. Press then <img src="materials/diva_buttons/diva_infer_button.JPG" width="30px" /> to launch the inference. It will open a new terminal, printing the duration of the inference in the terminal at the end of the process.
+Click on the yellow rectangle **Classifier** to browse and select a trained classifier. Press then <img src="materials/diva_buttons/infer.png" width="30px" /> to launch the inference. It will open a new terminal, printing the duration of the inference in the terminal at the end of the process.
 
-The resulting annotation will appear in a second channel of the original file, that you can select in the top-right corner by clicking on the second coloured icons <img src="materials/diva_buttons/diva_coloured_icons.JPG" width="80px" /> (see [video](/materials/article_videos/VideoS3_DIVA_compare_result_lung_image02_30fps_720p30.mp4)). It is now possible to modify the transfer function to improve visualization, and to save the annotation by successively clicking on **Volume**, **2** and **Export**.
+The resulting annotation will appear in a second channel of the original file, that you can select in the top-right corner by clicking on the second coloured icons <img src="materials/diva_buttons/diva_coloured_icons.JPG" width="80px" /> (see [video](/materials/article_videos/VideoS3_DIVA_compare_result_lung_image02_30fps_720p30.mp4)). It is now possible to modify the transfer function to improve visualization, and to save the annotation by successively clicking on **Volume**, <img src="materials/diva_buttons/channel2.png" width="30px" /> and **Export**.
 
 ## Iterate the procedure
 If you are not satisfied with the quality of the inference, for instance if too few or too much voxels bear high probability, it is possible to correct the initial tagging and re-train your classifier for as much rounds as you want. To do so, perform another round of tagging and click on the yellow rectangle **Exisiting Classifier** to browse and choose the classifier you seek to improve, adapt the strength according to which learner you want to train, and press **Train**.
