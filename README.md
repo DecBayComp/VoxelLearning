@@ -114,7 +114,7 @@ Click on the yellow rectangle **Classifier** to browse and select a trained clas
 
 <img align="left" src="/materials/article_gif/VideoS3_DIVA_compare_result_lung_image02.gif" width="480" height="270"/> 
 
-The resulting annotation will appear in a second channel of the original file, that you can select in the top-right corner by clicking on the second coloured icons <img src="materials/diva_buttons/circle.png" width="20px"/>. It is now possible to modify the transfer function to improve visualization, and to save the annotation by successively clicking on **Volume**, <img src="materials/diva_buttons/channel2.png" width="20px"/> and **Export**. The example here shows a CT-scan of lung tumor with three channels, the first for the raw CT-scan in gray-scale, the second for the experts' segmentation in green, and the third for the inferred annotation in blue to red color-scale.
+The resulting annotation will appear in a second channel of the original file, that you can select in the top-right corner by clicking on the second coloured icons <img src="materials/diva_buttons/circle.png" width="20px"/>. It is possible to modify the transfer function to improve visualization, and to save the annotation by successively clicking on **Volume**, <img src="materials/diva_buttons/channel2.png" width="20px"/> and **Export**. The video shows a CT-scan of lung tumor with three channels, the first for the raw CT-scan in gray-scale, the second for the experts' segmentation in green, and the third for the inferred annotation in blue to red color-scale.
  
  
 ## Iterate the procedure
