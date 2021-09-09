@@ -49,7 +49,7 @@ For a complete voxel learning pipeline example see this video :
  ## Load your image
 The voxel learning process requires Tagged Image File Format (TIFF) image files in 8 or 16-bits. We recommend limiting the size of loaded files to less than 1 GB. Larger files may be scaled or cropped via [ImageJ/Fiji](https://imagej.net/software/fiji/downloads) for example. Multichannel files organized using the ImageJ/Fiji convention are supported. To improve DIVA performances, use images that are located on your disk.
 
-If your original data is stored in a DICOM format (such as in the [example](/materials/data_examples/breast_cancer_image_01/raw_data/), you have to convert the data to a TIFF format with ImageJ/Fiji for example : 
+If your original data is stored in a DICOM format (such as in the [example](/materials/data_examples/breast_cancer_image_01/raw_data/)), you have to convert the data to a TIFF format with ImageJ/Fiji for example : 
  
  1) Open the DICOM image via *Plugins/bio-Fromats/Bio-Formats* Importer with options :
     - View stack with : Hyperstack
@@ -110,10 +110,12 @@ Once your model is selected, click on <img src="materials/diva_buttons/training.
   
  
 ## Perform and visualize inference
-
+ 
 Click on the yellow rectangle **Classifier** to browse and select a trained classifier. Press then <img src="materials/diva_buttons/infer.png" width="25px"/> to launch the inference. It will open a new terminal, printing the duration of the inference in the terminal at the end of the process.
 
-The resulting annotation will appear in a second channel of the original file, that you can select in the top-right corner by clicking on the second coloured icons <img src="materials/diva_buttons/circle.png" width="20px"/> (see [video](/materials/article_videos/VideoS3_DIVA_compare_result_lung_image02_30fps_720p30.mp4)). It is now possible to modify the transfer function to improve visualization, and to save the annotation by successively clicking on **Volume**, <img src="materials/diva_buttons/channel2.png" width="20px"/> and **Export**.
+<img align="left" src="/materials/article_gif/VideoS3_DIVA_compare_result_lung_image02.gif" width="480" height="270"/> 
+
+The resulting annotation will appear in a second channel of the original file, that you can select in the top-right corner by clicking on the second coloured icons <img src="materials/diva_buttons/circle.png" width="20px"/>. It is now possible to modify the transfer function to improve visualization, and to save the annotation by successively clicking on **Volume**, <img src="materials/diva_buttons/channel2.png" width="20px"/> and **Export**. The example here shows a CT-scan of lung with three channels, the first for the raw CT-scan in gray-scale, the second for the experts' segmentation in green, and the third for the inferred annotation in blue to red color-scale.
 
  
 ## Iterate the procedure
