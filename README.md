@@ -91,7 +91,7 @@ Once the tagging step is done, open the dedicated **Voxel Learning** panel by cl
 
 ## Train your model
 
-<img align="right" src="materials/diva_buttons/diva_train_panel.jpg" width="250px"/>
+<img align="right" src="materials/diva_buttons/diva_train_panel.jpg" width="220px"/>
 
 Click on the yellow rectangle labelled **New Classifier** to browse your folder and create a pickle file (**.pckl**).
 
