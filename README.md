@@ -83,7 +83,7 @@ Switching to and from the VR mode is performed by clicking on <img src="material
 <img align="left" src="/materials/article_gif/VideoS2_DIVA_tagging_lung_image01_TAGS.gif" width="480" height="270"/> 
 
 In the VR environment, you can iteract with the volume with the VR controller, see details [here](https://diva.pasteur.fr/wp-content/uploads/2019/09/diva-viewer-manual.pdf). For the tagging step you have to first activate the **Clipper Tool** to cut in real-time in the volume and then use the **Tagger tool**. Tagging is done with the controller by clicking on the <img src="materials/diva_buttons/plus.png" width="15px"/> button and choosing the tag's color (cyan for positive tags and magenta for negative tags). All the tags can be saved as .json file (in order to be re-opened later in DIVA) by clicking on **VR Annotations** in the top-right corner, then on the icon <img src="materials/diva_buttons/tagging.png" width="20px"/> and on the **Export** button.
- 
+
  
 ## Compute locally or remotely
 Once the tagging step is done, open the dedicated **Voxel Learning** panel by clicking on **Advanced** in the top right corner and then on the following pictogram <img src="materials/diva_buttons/features.png" width="20px"/>. Click on <img src="materials/diva_buttons/communication.png" width="20px"/> to choose **Local** or **Cloud** computation. In the latter, you should specify which **Server** and **Port** you want to use.
