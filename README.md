@@ -86,6 +86,7 @@ In the VR environment, you can iteract with the volume through the VR controller
  
  
  <br /> 
+ 
 ## Compute locally or remotely
 Once the tagging step is done, open the dedicated **Voxel Learning** panel by clicking on **Advanced** in the top right corner and then on the following pictogram <img src="materials/diva_buttons/features.png" width="20px"/>. Click on <img src="materials/diva_buttons/communication.png" width="20px"/> to choose **Local** or **Cloud** computation. In the latter, you should specify which **Server** and **Port** you want to use.
 
