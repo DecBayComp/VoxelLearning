@@ -82,9 +82,10 @@ Switching to and from the VR mode is performed by clicking on <img src="material
  
 <img align="left" src="/materials/article_gif/VideoS2_DIVA_tagging_lung_image01_TAGS.gif" width="480" height="270"/> 
 
-In the VR environment, you can iteract with the volume through the VR controller for interaction details see [DIVA user manual](https://diva.pasteur.fr/wp-content/uploads/2019/09/diva-viewer-manual.pdf). For the tagging step you have to first activate the **Clipper Tool** to cut in real-time in the volume and then use the **Tagger tool**. Tagging is done with the VR controller by clicking on the <img src="materials/diva_buttons/plus.png" width="15px"/> button and choosing the tag's color (cyan for positive tags and magenta for negative tags). A video example is available [here](/materials/article_videos/VideoS2_DIVA_tagging_lung_image01_29-97fps.mp4). All the tags can be saved as .json file (in order to be re-opened later in DIVA) by clicking on **VR Annotations** in the top-right corner, then on the icon <img src="materials/diva_buttons/tagging.png" width="20px"/> and on the **Export** button.
+In the VR environment, you can iteract with the volume through the VR controller for interaction details see [DIVA user manual](https://diva.pasteur.fr/wp-content/uploads/2019/09/diva-viewer-manual.pdf). For the tagging step you have to first activate the **Clipper Tool** to cut in real-time in the volume and then use the **Tagger tool**. Tagging is done with the VR controller by clicking on the <img src="materials/diva_buttons/plus.png" width="15px"/> button and choosing the tag's color (cyan for positive tags and magenta for negative tags). All the tags can be saved as .json file (in order to be re-opened later in DIVA) by clicking on **VR Annotations** in the top-right corner, then on the icon <img src="materials/diva_buttons/tagging.png" width="20px"/> and on the **Export** button.
  
  
+ <br />
  <br />
  
 ## Compute locally or remotely
@@ -115,7 +116,7 @@ Click on the yellow rectangle **Classifier** to browse and select a trained clas
 
 <img align="left" src="/materials/article_gif/VideoS3_DIVA_compare_result_lung_image02.gif" width="480" height="270"/> 
 
-The resulting annotation will appear in a second channel of the original file, that you can select in the top-right corner by clicking on the second coloured icons <img src="materials/diva_buttons/circle.png" width="20px"/>. It is now possible to modify the transfer function to improve visualization, and to save the annotation by successively clicking on **Volume**, <img src="materials/diva_buttons/channel2.png" width="20px"/> and **Export**. The example here shows a CT-scan of lung with three channels, the first for the raw CT-scan in gray-scale, the second for the experts' segmentation in green, and the third for the inferred annotation in blue to red color-scale.
+The resulting annotation will appear in a second channel of the original file, that you can select in the top-right corner by clicking on the second coloured icons <img src="materials/diva_buttons/circle.png" width="20px"/>. It is now possible to modify the transfer function to improve visualization, and to save the annotation by successively clicking on **Volume**, <img src="materials/diva_buttons/channel2.png" width="20px"/> and **Export**. The example here shows a CT-scan of lung tumor with three channels, the first for the raw CT-scan in gray-scale, the second for the experts' segmentation in green, and the third for the inferred annotation in blue to red color-scale.
 
   <br />
   <br />
