@@ -41,8 +41,8 @@ DIVA is designed to run on the Windows 10 operating system with at least OpenCL 
 
 # Apply Voxel Learning to your data
  
-For a complete voxel learning pipeline example see this [video](/materials/article_videos/VideoS1_DIVA_learning_pipeline.mp4). 
- <img src="https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif" width="40" height="40" />
+For a complete voxel learning pipeline example see this video : 
+ <img align="right" src="/materials/article_gif/VideoS1_DIVA_learning_pipeline.gif" width="960" height="540" />
 
 
  ## Load your image
