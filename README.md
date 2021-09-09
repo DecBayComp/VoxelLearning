@@ -69,8 +69,9 @@ Voxel color and opacity can be modified in real-time through a user-friendly tra
  
  <img align="left" src="/materials/article_gif/VideoS2_DIVA_tagging_lung_image01_TF.gif" width="480" height="270"/>
 
- This interface is composed of the image histogram in gray, one white curve for the opacity and one color bar. Each of them are defined with control points which can be adjusted by dragging with the left mouse button (more details on the [DIVA user manual](https://diva.pasteur.fr/wp-content/uploads/2019/09/diva-viewer-manual.pdf)). The basic principle of the transfer function is that each pixel of the histogram under the curve will be displayed with the corresponding color in the color bar, and each pixel above the curve will be disabled in the 3D and VR view. For multichannel files, each channel possesses its own transfer function which can be activated by left clicking on the corresponding channel icon in the *Volume* panel.
+ This interface is composed of the image histogram in gray, one white curve for the opacity and one color bar. Each of them are defined with control points which can be adjusted by dragging with the left mouse button (more details on the [DIVA user manual](https://diva.pasteur.fr/wp-content/uploads/2019/09/diva-viewer-manual.pdf)). The basic principle of the transfer function is that each pixel of the histogram under the curve will be displayed with the corresponding color in the color bar, and each pixel above the curve will be disabled in the 3D and VR view. For multichannel files, each channel possesses its own transfer function which can be activated by left clicking on the corresponding channel icon in the **Volume** panel.
  
+ <br />
  
 We recommend you to customize this transfer function to highlight your object of interest and save it as .json file using the **Save** button in order to be able to re-open if necessary.
 
@@ -84,12 +85,10 @@ Switching to and from the VR mode is performed by clicking on <img src="material
 In the VR environment, you can iteract with the volume through the VR controller for interaction details see [DIVA user manual](https://diva.pasteur.fr/wp-content/uploads/2019/09/diva-viewer-manual.pdf). For the tagging step you have to first activate the **Clipper Tool** to cut in real-time in the volume and then use the **Tagger tool**. Tagging is done with the VR controller by clicking on the <img src="materials/diva_buttons/plus.png" width="15px"/> button and choosing the tag's color (cyan for positive tags and magenta for negative tags). A video example is available [here](/materials/article_videos/VideoS2_DIVA_tagging_lung_image01_29-97fps.mp4). All the tags can be saved as .json file (in order to be re-opened later in DIVA) by clicking on **VR Annotations** in the top-right corner, then on the icon <img src="materials/diva_buttons/tagging.png" width="20px"/> and on the **Export** button.
  
  
- 
+ <br />
  
 ## Compute locally or remotely
-Once the tagging step is done, open the dedicated **Voxel Learning** panel by clicking on **Advanced** in the top right corner and then on the following pictogram <img src="materials/diva_buttons/features.png" width="20px"/>. 
-
-Click on <img src="materials/diva_buttons/communication.png" width="20px"/> to choose **Local** or **Cloud** computation. In the latter, you should specify which **Server** and **Port** you want to use.
+Once the tagging step is done, open the dedicated **Voxel Learning** panel by clicking on **Advanced** in the top right corner and then on the following pictogram <img src="materials/diva_buttons/features.png" width="20px"/>. Click on <img src="materials/diva_buttons/communication.png" width="20px"/> to choose **Local** or **Cloud** computation. In the latter, you should specify which **Server** and **Port** you want to use.
 
 
 ## Train your model
