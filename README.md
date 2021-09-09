@@ -1,5 +1,8 @@
 <div align="justify">
  
+ <img align="center" src="materials/diva_buttons/diva_black.png" width="250px"/>
+
+ 
 # Voxel Learning in DIVA
 
 Three-dimensional imaging is at the core of medical imaging and is becoming a standard in biological research. There is an increasing need to visualize, analyze and interact with data in a natural three-dimensional context. By combining stereoscopy and motion tracking, commercial virtual reality (VR) headsets provide a solution to this important visualization challenge by allowing any user to view volumetric image stacks in a highly intuitive fashion. 
