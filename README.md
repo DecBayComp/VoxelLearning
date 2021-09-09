@@ -63,7 +63,7 @@ Importation can then be done in DIVA using the <img src="materials/diva_buttons/
 
 ## Improve visualization
 
-<img align="left" src="materials/diva_buttons/diva_transfer_function_panel.JPG" width="350px"/>
+<img align="left" src="materials/diva_buttons/diva_transfer_function_panel.jpg" width="350px"/>
 
 Voxel color and opacity can be modified in real-time through a user-friendly transfer function interface located in the **Volume** panel under <img src="materials/diva_buttons/channel1.png" width="20px"/> or <img src="materials/diva_buttons/channel2.png" width="20px"/> icon. This interface is composed of the image histogram in gray, one white curve for the opacity and one color bar. Each of them are defined with control points which can be adjusted by dragging with the left mouse button (more details on the [DIVA user manual](https://diva.pasteur.fr/wp-content/uploads/2019/09/diva-viewer-manual.pdf)). The basic principle of the transfer function is that each pixel of the histogram under the curve will be displayed with the corresponding color in the color bar, and each pixel above the curve will be disabled in the 3D and VR view. For multichannel files, each channel possesses its own transfer function which can be activated by left clicking on the corresponding channel icon in the *Volume* panel.
 
@@ -83,7 +83,7 @@ Click on <img src="materials/diva_buttons/communication.png" width="20px"/> to c
 
 ## Train your model
 
-<img align="right" src="materials/diva_buttons/diva_train_panel.JPG" width="250px"/>
+<img align="right" src="materials/diva_buttons/diva_train_panel.jpg" width="250px"/>
 
 Click on the yellow rectangle labelled **New Classifier** to browse your folder and create a pickle file (**.pckl**).
 
