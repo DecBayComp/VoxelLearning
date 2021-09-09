@@ -41,7 +41,8 @@ DIVA is designed to run on the Windows 10 operating system with at least OpenCL 
 
  
 # Apply Voxel Learning to your data
-For a complete voxel learning pipeline example see this video : <img align="right" src="/materials/article_gif/VideoS1_DIVA_learning_pipeline.gif" width="960" height="540"/>
+For a complete voxel learning pipeline example see this video : 
+ <img align="right" src="/materials/article_gif/VideoS1_DIVA_learning_pipeline.gif" width="960" height="540"/>
 
 
  ## Load your image
@@ -73,7 +74,7 @@ We recommend you to customize this transfer function to highlight your object of
 ## Annotate in VR
  
  <img align="left" src="/materials/article_gif/VideoS2_DIVA_tagging_lung_image01_TAGS.gif" width="480" height="270"/> 
-Switching to and from the VR mode is performed by clicking on <img src="materials/diva_buttons/vr.png" width="20px"/> in the top-left corner and will automatically launch SteamVR to activate the plugged VR headset. *IMPORTANT* : this button will not respond if SteamVR is not installed. In the VR environment, you can iteract with the volume through the VR controller for interaction details see [DIVA user manual2](https://diva.pasteur.fr/wp-content/uploads/2019/09/diva-viewer-manual.pdf). 
+Switching to and from the VR mode is performed by clicking on <img src="materials/diva_buttons/vr.png" width="20px"/> in the top-left corner and will automatically launch SteamVR to activate the plugged VR headset. *IMPORTANT* : this button will not respond if SteamVR is not installed. In the VR environment, you can iteract with the volume through the VR controller for interaction details see DIVA user manual. 
  
 For the tagging step you have to first activate the **Clipper Tool** to cut in real-time in the volume and then use the **Tagger tool**. Tagging is done with the VR controller by clicking on the <img src="materials/diva_buttons/plus.png" width="15px"/> button and choosing the tag's color (cyan for positive tags and magenta for negative tags). A video example is available [here](/materials/article_videos/VideoS2_DIVA_tagging_lung_image01_29-97fps.mp4). All the tags can be saved as .json file (in order to be re-opened later in DIVA) by clicking on **VR Annotations** in the top-right corner, then on the icon <img src="materials/diva_buttons/tagging.png" width="20px"/> and on the **Export** button.
 
