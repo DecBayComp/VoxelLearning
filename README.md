@@ -1,7 +1,9 @@
 <div align="justify">
  
- <img align="center" src="materials/diva_buttons/diva_black.png" width="250px"/>
-
+ <p align="center">
+   <img src="/materials/diva_buttons/diva-black.png" width="250px"/>
+</p>
+ 
  
 # Voxel Learning in DIVA
 
