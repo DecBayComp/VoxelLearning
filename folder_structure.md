@@ -40,7 +40,7 @@
            │   ├── mask_blue.tif = "positive" tags used for training on raw_image.tif
            │   ├── mask_magenta.tif = "negative" tags used for training on raw_image.tif
            │   ├── tags_DIVA.csv = tagging points lists 
-           │   └── tags_DIVA.json = tagging data used in DIVA (can be re-open in DIVA)
+           │   └── tags_DIVA.json = tagging data used in DIVA (can be re-opened in DIVA)
            ├── classifiers_56_features : learning results using 56 features
            │   ├── 01_RFC  
            │   │   ├── Composite___.tif = raw image (Channel1) + ground_truth (Channel2) + inferred_proba(Channel3)
