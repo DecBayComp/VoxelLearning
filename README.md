@@ -9,6 +9,7 @@ Three-dimensional imaging is at the core of medical imaging and is becoming a st
 
  **DIVA** (Data Integration and Visualisation in Augmented and virtual environments) software is a user-friendly platform that generates volumetric reconstructions from raw 3D microscopy image stacks and enables efficient visualization and quantification in VR without pre-treatment. We introduce here **Voxel Learning**, a new procedure to quickly annotate and analyze 3D data by combining VR and cloud computing.
 
+<br/>
 
 **Voxel Learning** makes the following contributions to the field:
 1. **Natural interactions with volumetric representations**: VR is leveraged to provide the user an adapted environment, where he can interact intuitively with experimental imaging data.
@@ -75,7 +76,7 @@ As shown on the video above with a CT-scan of lung tumor, this interface is comp
  
 For multichannel files, each channel possesses its own transfer function which can be activated by left clicking on the corresponding channel icon in the **Volume** panel. We recommend you to customize this transfer function to highlight your object of interest and save it as .json file using the **Save** button in order to be able to re-open if necessary.
 
- 
+<br/>
 ## Annotate in VR
  
 Switching to and from the VR mode is performed by clicking on <img src="materials/diva_buttons/vr.png" width="20px"/> in the top-left corner and will automatically launch SteamVR to activate the plugged VR headset. *IMPORTANT* : this button will not respond if SteamVR is not installed.  
@@ -115,8 +116,9 @@ Click on the yellow rectangle **Classifier** to browse and select a trained clas
 
 The resulting annotation will appear in a second channel of the original file, that you can select in the top-right corner by clicking on the second coloured icons <img src="materials/diva_buttons/circle.png" width="20px"/>. It is possible to modify the transfer function to improve visualization, and to save the annotation by successively clicking on **Volume**, <img src="materials/diva_buttons/channel2.png" width="20px"/> and **Export**. The video shows a CT-scan of lung tumor with three channels, the first for the raw CT-scan in gray-scale, the second for the experts' segmentation in green, and the third for the inferred annotation in blue to red color-scale.
  
- 
+<br/> 
 ## Iterate the procedure
+ 
 If you are not satisfied with the quality of the inference, for instance if too few or too much voxels bear high probability, it is possible to correct the initial tagging and re-train your classifier for as much rounds as you want. To do so, perform another round of tagging and click on the yellow rectangle **Exisiting Classifier** to browse and choose the classifier you seek to improve, adapt the strength according to which learner you want to train, and press <img src="materials/diva_buttons/training.png" width="25px"/>.
 
 Doing so, the learner trained will be stacked on top of the previous one(s) in order that, upon you click on <img src="materials/diva_buttons/infer.png" width="25px"/>, inference will be perform sequentially for each learner, adding the resulting probability of the former to the features of the latter. Such process enables enhanced robustness of the global inference, but will result in longer computation time.
