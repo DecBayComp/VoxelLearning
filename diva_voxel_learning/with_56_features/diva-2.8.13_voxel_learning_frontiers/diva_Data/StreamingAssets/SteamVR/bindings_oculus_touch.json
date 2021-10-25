@@ -1,0 +1,264 @@
+{
+   "action_manifest_version" : 0,
+   "alias_info" : {},
+   "app_key" : "application.generated.unity.diva.exe",
+   "bindings" : {
+      "/actions/buggy" : {
+         "chords" : [],
+         "haptics" : [],
+         "poses" : [],
+         "skeleton" : [],
+         "sources" : []
+      },
+      "/actions/default" : {
+         "chords" : [],
+         "haptics" : [],
+         "poses" : [],
+         "skeleton" : [],
+         "sources" : []
+      },
+      "/actions/diva" : {
+         "chords" : [],
+         "haptics" : [
+            {
+               "output" : "/actions/diva/out/haptic",
+               "path" : "/user/hand/left/output/haptic"
+            },
+            {
+               "output" : "/actions/diva/out/haptic",
+               "path" : "/user/hand/right/output/haptic"
+            }
+         ],
+         "poses" : [
+            {
+               "output" : "/actions/diva/in/pose",
+               "path" : "/user/hand/left/pose/raw"
+            },
+            {
+               "output" : "/actions/diva/in/pose",
+               "path" : "/user/hand/right/pose/raw"
+            }
+         ],
+         "skeleton" : [],
+         "sources" : [
+            {
+               "inputs" : {
+                  "east" : {
+                     "output" : "/actions/diva/in/trackpadtoucheast"
+                  },
+                  "north" : {
+                     "output" : "/actions/diva/in/trackpadtouchnorth"
+                  },
+                  "south" : {
+                     "output" : "/actions/diva/in/trackpadtouchsouth"
+                  },
+                  "west" : {
+                     "output" : "/actions/diva/in/trackpadtouchwest"
+                  }
+               },
+               "mode" : "dpad",
+               "parameters" : {
+                  "sub_mode" : "touch"
+               },
+               "path" : "/user/hand/left/input/joystick"
+            },
+            {
+               "inputs" : {
+                  "east" : {
+                     "output" : "/actions/diva/in/trackpadtoucheast"
+                  },
+                  "north" : {
+                     "output" : "/actions/diva/in/trackpadtouchnorth"
+                  },
+                  "south" : {
+                     "output" : "/actions/diva/in/trackpadtouchsouth"
+                  },
+                  "west" : {
+                     "output" : "/actions/diva/in/trackpadtouchwest"
+                  }
+               },
+               "mode" : "dpad",
+               "parameters" : {
+                  "sub_mode" : "touch"
+               },
+               "path" : "/user/hand/right/input/joystick"
+            },
+            {
+               "inputs" : {
+                  "east" : {
+                     "output" : "/actions/diva/in/trackpadclickeast"
+                  },
+                  "north" : {
+                     "output" : "/actions/diva/in/trackpadclicknorth"
+                  },
+                  "south" : {
+                     "output" : "/actions/diva/in/trackpadclicksouth"
+                  },
+                  "west" : {
+                     "output" : "/actions/diva/in/trackpadclickwest"
+                  }
+               },
+               "mode" : "dpad",
+               "parameters" : {
+                  "sub_mode" : "click"
+               },
+               "path" : "/user/hand/left/input/joystick"
+            },
+            {
+               "inputs" : {
+                  "east" : {
+                     "output" : "/actions/diva/in/trackpadclickeast"
+                  },
+                  "north" : {
+                     "output" : "/actions/diva/in/trackpadclicknorth"
+                  },
+                  "south" : {
+                     "output" : "/actions/diva/in/trackpadclicksouth"
+                  },
+                  "west" : {
+                     "output" : "/actions/diva/in/trackpadclickwest"
+                  }
+               },
+               "mode" : "dpad",
+               "parameters" : {
+                  "sub_mode" : "click"
+               },
+               "path" : "/user/hand/right/input/joystick"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/diva/in/grab"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/trigger"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/diva/in/grab"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/trigger"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/diva/in/grip"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/y"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/diva/in/grip"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/y"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/diva/in/grab"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/grip"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/diva/in/grab"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/grip"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/diva/in/menu"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/x"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/diva/in/menu"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/x"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/diva/in/trackpadclick"
+                  },
+                  "position" : {
+                     "output" : "/actions/diva/in/trackpadposition"
+                  },
+                  "touch" : {
+                     "output" : "/actions/diva/in/trackpadtouch"
+                  }
+               },
+               "mode" : "joystick",
+               "path" : "/user/hand/left/input/joystick"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/diva/in/trackpadclick"
+                  },
+                  "position" : {
+                     "output" : "/actions/diva/in/trackpadposition"
+                  },
+                  "touch" : {
+                     "output" : "/actions/diva/in/trackpadtouch"
+                  }
+               },
+               "mode" : "joystick",
+               "path" : "/user/hand/right/input/joystick"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/diva/in/menu"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/a"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/diva/in/grip"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/b"
+            }
+         ]
+      },
+      "/actions/platformer" : {
+         "chords" : [],
+         "haptics" : [],
+         "poses" : [],
+         "skeleton" : [],
+         "sources" : []
+      }
+   },
+   "category" : "steamvr_input",
+   "controller_type" : "oculus_touch",
+   "description" : "",
+   "name" : "My diva [Testing] configuration for Oculus Touch",
+   "options" : {},
+   "simulated_actions" : []
+}
