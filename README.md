@@ -125,6 +125,6 @@ Doing so, the learner trained will be stacked on top of the previous one(s) in o
    
   
 # Example
-You will find in [here](/materials/data_examples/breast_cancer_image_01/) different applications of **Voxel Learning** on an example CT-scan of breast tumor. Raw data in TIFF format is available with an adapted transfer function to ensure correct visualization, as well as an expert segmentation of the tumor. Tagging file in the format JSON can be loaded to see which tags were used to train the different models. We propose in this [folder](/materials/data_examples/breast_cancer_image_01/classifiers_56_features/) all the different learners available, trained and ready to be used for inference, and *composite* the resulting fusion of the original image, the expert segmentation and the inference (for more details see the [folder_structure file](/folder_structure.md)).
+You will find in [here](/materials/data_examples/) different applications of **Voxel Learning** on CT scans, MRI and microscopy images. Raw data in TIFF format is available with an adapted transfer function to ensure correct visualization, as well as an expert segmentation of the tumor. Tagging file in the format JSON can be loaded to see which tags were used to train the different models. We propose in the folder all the different learners available (for more details see the [folder_structure file](/folder_structure.md)).
  
  </div>
