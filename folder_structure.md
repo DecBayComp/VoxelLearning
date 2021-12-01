@@ -4,13 +4,12 @@
 
 ```
 ├── README.md
-│   └── blabla
 │
 ├── diva_cloud
 │   ├── diva_django
-│   │    TO DO
+│   │    
 │   └── diva_docker
-│       TODO
+│       
 │
 ├── diva_voxel_learning
 │  └── with_56_features : DIVA updated software to use 56 pre-defined classical features (see list_of_features.md)
