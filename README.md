@@ -35,7 +35,7 @@ For more information, read the following paper: REF preprint ??
 # Installation and Requirements
 DIVA is designed to run on the Windows 10 operating system with at least OpenCL 2.0. We recommend using DIVA with an Intel i5 processor equivalent or better, at least 4GB RAM of memory, 300 MB of storage and a NVIDIA GeForce 900 Series or better Graphical Processing Unit (GPU). DIVA can be used with and witout VR headset and is compatible with HTC Vive, HTC Vive Pro, Oculus Rift, Oculus Rift S, Oculus Quest (with Link Cable) and Windows Mixed Reality headsets. For each type of VR headsets you have to download the corresponding installation software (such as [ViveSetup](https://www.vive.com/fr/setup/pc-vr/) or [Oculus](https://www.oculus.com/setup/?locale=fr_FR)). In addition, [SteamVR](https://www.steamvr.com/fr/) is required to use VR functions. You can find DIVA user manual and all the information about the legacy software [here](https://diva.pasteur.fr/). 
 
-1. Install [Python 3.7.4](https://www.python.org/downloads/windows/) and select *Add Python 3.7 to PATH*. When the installation is finished, verify if paths (to * Python37\ * and * Python37\Scripts\ *) are in the environment variables 
+1. Install [Python 3.7.4](https://www.python.org/downloads/windows/) and select *Add Python 3.7 to PATH*. When the installation is finished, verify if paths (to Python37\ and Python37\Scripts\) are in the environment variables 
 2. Install Python packages
 > $ `pip install -r requirements.txt` use this [requirements.txt file](/diva_cloud/diva_django/requirements.txt)
 3. Install DIVA Cloud (only for remote computation) : 
