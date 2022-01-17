@@ -41,7 +41,7 @@ DIVA is designed to run on the Windows 10 operating system with at least OpenCL 
 3. Install DIVA Cloud (only for remote computation) : 
     1. load the [diva_dango](/diva_cloud/diva_django/) and [diva_docker](/diva_cloud/diva_docker) folders
     2. install Docker on your system: [install on Windows](https://hub.docker.com/editions/community/docker-ce-desktop-windows/) and select "Install required Windows components for WSL 2"
-    3. if there is a problem with WSL2 <img align="right" src="/materials/installation/docker_desktop_WSL2.PNG" width="200px"/> : click on the link, [download the linux kernel](https://docs.microsoft.com/fr-fr/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package), execute the file, define WSL by default `$ wsl --set-default-version 2` (in powershell), and click on "restart" docker desktop  
+    3. if there is a problem with WSL2 <img align="right" src="/materials/installation/docker_desktop_WSL2.PNG" width="300px"/> : click on the link, [download the linux kernel](https://docs.microsoft.com/fr-fr/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package), execute the file, define WSL by default `$ wsl --set-default-version 2` (in powershell), and click on "restart" docker desktop  
     4. `$ cd diva_docker` to go to the diva_docker folder
     5. `$ bash run_diva_cloud_docker.sh install` (in git bash that can be open with maj/right-click)
 4. Launch SteamVR before DIVA software if you want to use VR environment.
