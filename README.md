@@ -41,9 +41,9 @@ DIVA is designed to run on the Windows 10 operating system with at least OpenCL 
 3. Install DIVA Cloud (only for remote computation) : 
     1. load the [diva_dango](/diva_cloud/diva_django/) and [diva_docker](/diva_cloud/diva_docker) folders
     2. install Docker on your system: [install on Windows](https://hub.docker.com/editions/community/docker-ce-desktop-windows/) <img align="left" src="/materials/installation/install_docker_desktop.png" width="200px"/>  
-    3. If there is a problem with WSL2 <img align="right" src="/materials/installation/docker_desktop_WSL2.PNG" width="200px"/> : click on the link, [download the linux kernel](https://docs.microsoft.com/fr-fr/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package), execute the file, define WSL by default wsl > $ `--set-default-version 2` (in powershell), and click on "restart" docker desktop  
-    4. > $ `cd diva_docker` to go to the diva_docker folder
-    5. > $ `bash run_diva_cloud_docker.sh install` (in git bash that can be open with maj/right-click)
+    3. If there is a problem with WSL2 <img align="right" src="/materials/installation/docker_desktop_WSL2.PNG" width="200px"/> : click on the link, [download the linux kernel](https://docs.microsoft.com/fr-fr/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package), execute the file, define WSL by default > $ `wsl --set-default-version 2` (in powershell), and click on "restart" docker desktop  
+    4. `$ cd diva_docker` to go to the diva_docker folder
+    5. `$ bash run_diva_cloud_docker.sh install` (in git bash that can be open with maj/right-click)
 4. Launch SteamVR before DIVA software if you want to use VR environment.
 5. Install DIVA : choose in the [*diva_voxel_learning* folder](/diva_voxel_learning) the version of the updated software you want to use : one uses 56 features for voxel learning (see details in the article) and the other uses only pixel neighborhood information. Load the corresponding folder and execute DIVA by double-clicking on the provided *diva.exe* file. DIVA will take a moment to load as it allocates memory (roughly 20–30 seconds).
   
