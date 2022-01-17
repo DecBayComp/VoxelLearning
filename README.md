@@ -40,9 +40,8 @@ DIVA is designed to run on the Windows 10 operating system with at least OpenCL 
 > $ `pip install -r requirements.txt` use this [requirements.txt file](/diva_cloud/diva_django/requirements.txt)
 3. Install DIVA Cloud (only for remote computation) : 
  a. load the [diva_dango](/diva_cloud/diva_django/) and [diva_docker](/diva_cloud/diva_docker) folders
- b. install Docker on your system: [install on Windows](https://hub.docker.com/editions/community/docker-ce-desktop-windows/)
-     1. <img align="left" src="/materials/installation/install_docker_desktop.png" width="200px"/> 
-     2. if there is a problem with WSL2 <img align="left" src="/materials/installation/docker_desktop_WSL2.png" width="200px"/> : click on the link, [download the linux kernel](https://docs.microsoft.com/fr-fr/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package), execute the file, define WSL by default wsl --set-default-version 2 (in powershell), and click on "restart" docker desktop 
+ b. install Docker on your system: [install on Windows](https://hub.docker.com/editions/community/docker-ce-desktop-windows/) <img align="left" src="/materials/installation/install_docker_desktop.png" width="200px"/> 
+if there is a problem with WSL2 <img align="right" src="/materials/installation/docker_desktop_WSL2.PNG" width="200px"/> : click on the link, [download the linux kernel](https://docs.microsoft.com/fr-fr/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package), execute the file, define WSL by default wsl --set-default-version 2 (in powershell), and click on "restart" docker desktop 
  c. go to diva_docker folder "cd diva_docker"
  d. bash run_diva_cloud_docker.sh install (in git bash - can be open  with maj/right click)
 4. Launch SteamVR before DIVA software if you want to use VR environment.
