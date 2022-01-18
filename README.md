@@ -38,7 +38,7 @@ DIVA is designed to run on the Windows 10 operating system with at least OpenCL 
 1. Install [Python 3.7.4](https://www.python.org/downloads/windows/) and select *Add Python 3.7 to PATH*. When the installation is finished, verify if paths to Python37\ and Python37\Scripts\ are in the environment variables 
 2. Install Python packages
 > $ `pip install -r requirements.txt` use this [requirements.txt file](/diva_cloud/diva_django/requirements.txt)
-3. Install DIVA Cloud (only for remote computation) : 
+3. Install DIVA Cloud (only for voxel learning) : 
     1. load the [diva_dango](/diva_cloud/diva_django/) and [diva_docker](/diva_cloud/diva_docker) folders
     2. [install Docker on Windows](https://hub.docker.com/editions/community/docker-ce-desktop-windows/) and select *Install required Windows components for WSL 2*
     3. if there is a problem with WSL2 <img align="right" src="/materials/installation/docker_desktop_WSL2.PNG" width="350px"/> : click on the link, [download the linux kernel](https://docs.microsoft.com/fr-fr/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package), execute the file, define WSL by default `$ wsl --set-default-version 2` (in powershell), and click on *restart* docker desktop  
