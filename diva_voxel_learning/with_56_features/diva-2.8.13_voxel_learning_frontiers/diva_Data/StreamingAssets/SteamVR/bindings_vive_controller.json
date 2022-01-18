@@ -1,0 +1,231 @@
+{
+  "app_key": "application.generated.unity.diva-steamvr2.exe",
+  "bindings": {
+    "/actions/buggy": {
+      "chords": [],
+      "poses": [],
+      "haptics": [],
+      "sources": [],
+      "skeleton": []
+    },
+    "/actions/default": {
+      "chords": [],
+      "poses": [],
+      "haptics": [],
+      "sources": [],
+      "skeleton": []
+    },
+    "/actions/diva": {
+      "chords": [],
+      "poses": [
+        {
+          "output": "/actions/diva/in/pose",
+          "path": "/user/hand/left/pose/raw"
+        },
+        {
+          "output": "/actions/diva/in/pose",
+          "path": "/user/hand/right/pose/raw"
+        }
+      ],
+      "haptics": [
+        {
+          "output": "/actions/diva/out/haptic",
+          "path": "/user/hand/left/output/haptic"
+        },
+        {
+          "output": "/actions/diva/out/haptic",
+          "path": "/user/hand/right/output/haptic"
+        }
+      ],
+      "sources": [
+        {
+          "path": "/user/hand/left/input/grip",
+          "mode": "button",
+          "parameters": {},
+          "inputs": {
+            "click": {
+              "output": "/actions/diva/in/grip"
+            }
+          }
+        },
+        {
+          "path": "/user/hand/right/input/grip",
+          "mode": "button",
+          "parameters": {},
+          "inputs": {
+            "click": {
+              "output": "/actions/diva/in/grip"
+            }
+          }
+        },
+        {
+          "path": "/user/hand/left/input/application_menu",
+          "mode": "button",
+          "parameters": {},
+          "inputs": {
+            "click": {
+              "output": "/actions/diva/in/menu"
+            }
+          }
+        },
+        {
+          "path": "/user/hand/right/input/application_menu",
+          "mode": "button",
+          "parameters": {},
+          "inputs": {
+            "click": {
+              "output": "/actions/diva/in/menu"
+            }
+          }
+        },
+        {
+          "path": "/user/hand/left/input/trigger",
+          "mode": "button",
+          "parameters": {},
+          "inputs": {
+            "click": {
+              "output": "/actions/diva/in/grab"
+            }
+          }
+        },
+        {
+          "path": "/user/hand/right/input/trigger",
+          "mode": "button",
+          "parameters": {},
+          "inputs": {
+            "click": {
+              "output": "/actions/diva/in/grab"
+            }
+          }
+        },
+        {
+          "path": "/user/hand/left/input/trackpad",
+          "mode": "dpad",
+          "parameters": {
+            "sub_mode": "click"
+          },
+          "inputs": {
+            "east": {
+              "output": "/actions/diva/in/trackpadclickeast"
+            },
+            "north": {
+              "output": "/actions/diva/in/trackpadclicknorth"
+            },
+            "south": {
+              "output": "/actions/diva/in/trackpadclicksouth"
+            },
+            "west": {
+              "output": "/actions/diva/in/trackpadclickwest"
+            }
+          }
+        },
+        {
+          "path": "/user/hand/right/input/trackpad",
+          "mode": "dpad",
+          "parameters": {
+            "sub_mode": "click"
+          },
+          "inputs": {
+            "east": {
+              "output": "/actions/diva/in/trackpadclickeast"
+            },
+            "north": {
+              "output": "/actions/diva/in/trackpadclicknorth"
+            },
+            "south": {
+              "output": "/actions/diva/in/trackpadclicksouth"
+            },
+            "west": {
+              "output": "/actions/diva/in/trackpadclickwest"
+            }
+          }
+        },
+        {
+          "path": "/user/hand/left/input/trackpad",
+          "mode": "trackpad",
+          "parameters": {},
+          "inputs": {
+            "click": {
+              "output": "/actions/diva/in/trackpadclick"
+            },
+            "position": {
+              "output": "/actions/diva/in/trackpadposition"
+            },
+            "touch": {
+              "output": "/actions/diva/in/trackpadtouch"
+            }
+          }
+        },
+        {
+          "path": "/user/hand/right/input/trackpad",
+          "mode": "trackpad",
+          "parameters": {},
+          "inputs": {
+            "click": {
+              "output": "/actions/diva/in/trackpadclick"
+            },
+            "position": {
+              "output": "/actions/diva/in/trackpadposition"
+            },
+            "touch": {
+              "output": "/actions/diva/in/trackpadtouch"
+            }
+          }
+        },
+        {
+          "path": "/user/hand/left/input/trackpad",
+          "mode": "dpad",
+          "parameters": {
+            "sub_mode": "touch"
+          },
+          "inputs": {
+            "east": {
+              "output": "/actions/diva/in/trackpadtoucheast"
+            },
+            "north": {
+              "output": "/actions/diva/in/trackpadtouchnorth"
+            },
+            "south": {
+              "output": "/actions/diva/in/trackpadtouchsouth"
+            },
+            "west": {
+              "output": "/actions/diva/in/trackpadtouchwest"
+            }
+          }
+        },
+        {
+          "path": "/user/hand/right/input/trackpad",
+          "mode": "dpad",
+          "parameters": {
+            "sub_mode": "touch"
+          },
+          "inputs": {
+            "east": {
+              "output": "/actions/diva/in/trackpadtoucheast"
+            },
+            "north": {
+              "output": "/actions/diva/in/trackpadtouchnorth"
+            },
+            "south": {
+              "output": "/actions/diva/in/trackpadtouchsouth"
+            },
+            "west": {
+              "output": "/actions/diva/in/trackpadtouchwest"
+            }
+          }
+        }
+      ],
+      "skeleton": []
+    },
+    "/actions/platformer": {
+      "chords": [],
+      "poses": [],
+      "haptics": [],
+      "sources": [],
+      "skeleton": []
+    }
+  },
+  "controller_type": "vive_controller",
+  "description": "",
+  "name": "vive_controller"
+}
