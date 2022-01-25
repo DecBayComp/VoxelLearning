@@ -42,8 +42,8 @@ DIVA is designed to run on the Windows 10 operating system with at least OpenCL 
     1. load the [diva_dango](/diva_cloud/diva_django/) and [diva_docker](/diva_cloud/diva_docker) folders
     2. [install Docker on Windows](https://hub.docker.com/editions/community/docker-ce-desktop-windows/) and select *Install required Windows components for WSL 2*
     3. if there is a problem with WSL2 <img align="right" src="/materials/installation/docker_desktop_WSL2.PNG" width="350px"/> : click on the [link](https://docs.microsoft.com/fr-fr/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package), download the linux kernel, execute the file, define WSL by default `$ wsl --set-default-version 2` (in powershell), and click on *restart* docker desktop  
-    4. `$ cd diva_docker` to go to the diva_docker folder
-    5. `$ bash run_diva_cloud_docker.sh install` (in git bash open with maj/right-click)
+    4. `$ cd diva_cloud\diva_docker` to go to the diva_docker folder
+    5. `$ bash run_diva_cloud_docker.sh install` using git bash (if not installed, you can download it [here](https://gitforwindows.org/) and open git bash with maj/right-click)
 4. Launch SteamVR before DIVA software if you want to use VR environment.
 5. Install DIVA : choose in the [*diva_voxel_learning* folder](/diva_voxel_learning) the version of the updated software you want to use : one uses 56 features for voxel learning (see details in the article) and the other uses only pixel neighborhood information. Load the corresponding folder and execute DIVA by double-clicking on the provided *diva.exe* file. DIVA will take a moment to load as it allocates memory (roughly 20–30 seconds).
   
