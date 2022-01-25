@@ -70,8 +70,8 @@ If your original data is stored in a DICOM format (such as in the [example](/mat
 
 Importation can then be done in DIVA using the <img src="materials/diva_buttons/file-o.png" width="20px"/> button with the *TIFF* option (in the top-left corner) which opens a file browser or by drag-and-dropping your TIFF file direclty. 
  
-Remark : if you see this type of behavior after loading your image in DIVA, juste press R in your keyboard to reload the image and correct the rendering artefact.
- <img align="left" src="/materials/article_gif/VideoS2_DIVA_tagging_lung_image01_TF.gif" width="480" height="270"/>
+Remark : if you see this type of behavior after loading your image in DIVA, press R in your keyboard to reload the image and correct the rendering artefact.
+ <img align="left" src="/materials/data_examples/rendering_artefact.PNG" width="480" height="270"/>
   
   
 ## Improve visualization
