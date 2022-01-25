@@ -68,9 +68,9 @@ If your original data is stored in a DICOM format (such as in the [example](/mat
 3) Make sure that the format is 8 or 16bit, if not change it in *Image/Type/* 
 4) Save as TIFF format : *File/Save As/Tiff*
 
-Importation can then be done in DIVA using the <img src="materials/diva_buttons/file-o.png" width="80px"/> button with the *TIFF* option (in the top-left corner) which opens a file browser or by drag-and-dropping your TIFF file direclty. 
+Importation can then be done in DIVA using the <img src="materials/diva_buttons/file-o.png" width="20px"/> button with the *TIFF* option (in the top-left corner) which opens a file browser or by drag-and-dropping your TIFF file direclty. 
  
- <img align="left" src="/materials/data_examples/rendering_artefact.PNG" width="20px"/> 
+ <img align="left" src="/materials/data_examples/rendering_artefact.PNG" width="80px"/> 
 Remark : if you see this type of behavior after loading your image in DIVA, press R in your keyboard to reload the image and correct the rendering artefact.
   
   
